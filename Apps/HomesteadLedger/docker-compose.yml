@@ -1,0 +1,68 @@
+name: homestead-ledger
+
+services:
+  homestead-ledger:
+    image: ghcr.io/tboltsp951/zimaos-homestead-ledger:latest
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8190"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    container_name: homestead-ledger
+    x-casaos:
+      ports:
+        - container: "8080"
+          description:
+            en_US: "Homestead Ledger web UI"
+      volumes:
+        - container: /data
+          description:
+            en_US: "Ledger data (crops, harvests, inventory, task board)"
+    labels:
+      icon: "/Apps/HomesteadLedger/icon.svg"
+
+x-casaos:
+  id: org.tbolt.homesteadledger
+  architectures:
+    - amd64
+    - "386"
+    - arm64
+    - arm
+  main: homestead-ledger
+  author: tbolt
+  category: Productivity
+  description:
+    en_US: A lean, local-first homestead ledger. Track crops, harvests, preserves and produce inventory, supplies, task boards, and your yearly garden journal — all in one place. Data lives on your NAS.
+  developer: tbolt
+  icon: icon.svg
+  screenshot_link:
+    - screenshot.svg
+  tagline:
+    en_US: Your homestead ledger, self-hosted
+  thumbnail: thumbnail.svg
+  tips:
+    before_install:
+      en_US: |
+        ## Homestead Ledger
+
+        Data (crops, harvests, inventory, tasks, journal) is stored on your ZimaOS disk at `/DATA/AppData/homestead-ledger/`, so it survives container rebuilds and is shared across every browser on your network.
+  title:
+    en_US: Homestead Ledger
+  index: /
+  port_map: "8190"
+  version: "1.0.0"
+  update_at: "2026-08-05"
+  release_notes:
+    en_US: |-
+      - Initial release: self-hosted homestead ledger with on-NAS storage.
+  website: "https://github.com/tboltsp951/zimaos-homestead-ledger"
+  repo: "https://github.com/tboltsp951/zimaos-homestead-ledger"
+  support: "https://github.com/tboltsp951/zimaos-homestead-ledger/issues"

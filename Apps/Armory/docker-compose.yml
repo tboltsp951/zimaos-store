@@ -1,0 +1,68 @@
+name: armory
+
+services:
+  armory:
+    image: ghcr.io/tboltsp951/zimaos-armory:latest
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8196"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    container_name: armory
+    x-casaos:
+      ports:
+        - container: "8080"
+          description:
+            en_US: "Armory web UI"
+      volumes:
+        - container: /data
+          description:
+            en_US: "Firearms, ammunition, reloading components, recipes, and range log"
+    labels:
+      icon: "https://raw.githubusercontent.com/tboltsp951/zimaos-armory/main/Apps/Armory/icon.svg"
+
+x-casaos:
+  id: org.tbolt.armory
+  architectures:
+    - amd64
+    - "386"
+    - arm64
+    - arm
+  main: armory
+  author: tbolt
+  category: Productivity
+  description:
+    en_US: A lean, local-first firearms and ammunition inventory. Track every firearm with round counts, cleaning intervals, accuracy by load, and magazine spring service; count rounds on hand by caliber with rotation reminders for carry ammo; and manage reloading components, recipes, buildable counts, and per-round costs. Data lives on your NAS.
+  developer: tbolt
+  icon: icon.svg
+  screenshot_link:
+    - screenshot.svg
+  tagline:
+    en_US: Your safe, the rounds in it, and the load book, self-hosted
+  thumbnail: thumbnail.svg
+  tips:
+    before_install:
+      en_US: |
+        ## Armory
+
+        Data (firearms, ammunition, reloading components, load recipes, magazines, and your range log) is stored on your ZimaOS disk at `/DATA/AppData/armory/`, so it survives container rebuilds and is shared across every browser on your network.
+  title:
+    en_US: Armory
+  index: /
+  port_map: "8196"
+  version: "1.0.0"
+  update_at: "2026-09-06"
+  release_notes:
+    en_US: |-
+      - Initial release: self-hosted firearms & ammunition inventory with on-NAS storage.
+  website: "https://github.com/tboltsp951/zimaos-armory"
+  repo: "https://github.com/tboltsp951/zimaos-armory"
+  support: "https://github.com/tboltsp951/zimaos-armory/issues"

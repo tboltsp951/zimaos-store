@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#1C2018"/>
+  <g stroke="#333A2B" stroke-width="1.5" opacity="0.7">
+    <line x1="0" y1="128" x2="512" y2="128"/>
+    <line x1="0" y1="256" x2="512" y2="256"/>
+    <line x1="0" y1="384" x2="512" y2="384"/>
+    <line x1="128" y1="0" x2="128" y2="512"/>
+    <line x1="256" y1="0" x2="256" y2="512"/>
+    <line x1="384" y1="0" x2="384" y2="512"/>
+  </g>
+  <rect x="72" y="68" width="368" height="376" rx="18" fill="#262B21"/>
+  <rect x="72" y="68" width="368" height="376" rx="18" fill="none" stroke="#3D4433" stroke-width="4"/>
+  <rect x="96" y="92" width="72" height="26" rx="13" fill="#C4A24A"/>
+  <text x="132" y="111" text-anchor="middle" font-family="monospace" font-weight="700" font-size="14" fill="#1C2018">ARMO</text>
+  <g font-family="monospace" font-weight="600">
+    <line x1="96" y1="148" x2="416" y2="148" stroke="#333A2B" stroke-width="3"/>
+    <text x="100" y="196" font-size="22" fill="#98A085">9mm</text>
+    <text x="412" y="204" text-anchor="end" font-size="42" fill="#C4A24A">640</text>
+    <rect x="100" y="222" width="180" height="4" fill="#3D4433"/>
+    <line x1="96" y1="252" x2="416" y2="252" stroke="#333A2B" stroke-width="3"/>
+    <text x="100" y="300" font-size="22" fill="#98A085">.223 Rem</text>
+    <text x="412" y="308" text-anchor="end" font-size="42" fill="#C4A24A">120</text>
+    <rect x="100" y="326" width="120" height="4" fill="#3D4433"/>
+    <line x1="96" y1="356" x2="416" y2="356" stroke="#333A2B" stroke-width="3"/>
+    <text x="100" y="404" font-size="22" fill="#98A085">12 gauge</text>
+    <text x="412" y="412" text-anchor="end" font-size="42" fill="#C4A24A">45</text>
+    <rect x="100" y="430" width="60" height="4" fill="#3D4433"/>
+  </g>
+  <rect x="404" y="404" width="48" height="18" rx="9" fill="#B0603A"/>
+</svg>

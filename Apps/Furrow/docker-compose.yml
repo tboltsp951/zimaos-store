@@ -1,0 +1,68 @@
+name: furrow
+
+services:
+  furrow:
+    image: ghcr.io/tboltsp951/zimaos-furrow:latest
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8191"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    container_name: furrow
+    x-casaos:
+      ports:
+        - container: "8080"
+          description:
+            en_US: "Furrow web UI"
+      volumes:
+        - container: /data
+          description:
+            en_US: "Garden planner data (beds, plant library, frost dates, tasks, harvest log)"
+    labels:
+      icon: "https://raw.githubusercontent.com/tboltsp951/zimaos-furrow/main/Apps/Furrow/icon.svg"
+
+x-casaos:
+  id: org.tbolt.furrow
+  architectures:
+    - amd64
+    - "386"
+    - arm64
+    - arm
+  main: furrow
+  author: tbolt
+  category: Productivity
+  description:
+    en_US: A lean, local-first garden planner. Lay out beds on a grid, plan spacing for each plant, build a planting calendar from your frost dates, track tasks, and log every harvest. Data lives on your NAS.
+  developer: tbolt
+  icon: icon.svg
+  screenshot_link:
+    - screenshot.svg
+  tagline:
+    en_US: Plan the rows before you dig them
+  thumbnail: thumbnail.svg
+  tips:
+    before_install:
+      en_US: |
+        ## Furrow
+
+        Data (beds, plant library, My Garden, frost dates, tasks, harvest log) is stored on your ZimaOS disk at `/DATA/AppData/furrow/`, so it survives container rebuilds and is shared across every browser on your network.
+  title:
+    en_US: Furrow
+  index: /
+  port_map: "8191"
+  version: "1.0.0"
+  update_at: "2026-08-11"
+  release_notes:
+    en_US: |-
+      - Initial release: self-hosted garden planner with on-NAS storage.
+  website: "https://github.com/tboltsp951/zimaos-furrow"
+  repo: "https://github.com/tboltsp951/zimaos-furrow"
+  support: "https://github.com/tboltsp951/zimaos-furrow/issues"

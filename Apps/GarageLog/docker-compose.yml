@@ -1,0 +1,68 @@
+name: garage-log
+
+services:
+  garage-log:
+    image: ghcr.io/tboltsp951/zimaos-garage-log:latest
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8194"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    container_name: garage-log
+    x-casaos:
+      ports:
+        - container: "8080"
+          description:
+            en_US: "Garage Log web UI"
+      volumes:
+        - container: /data
+          description:
+            en_US: "Service records (vehicles, maintenance, repairs, renewals)"
+    labels:
+      icon: "/Apps/GarageLog/icon.svg"
+
+x-casaos:
+  id: org.tbolt.garagelog
+  architectures:
+    - amd64
+    - "386"
+    - arm64
+    - arm
+  main: garage-log
+  author: tbolt
+  category: Productivity
+  description:
+    en_US: A lean, local-first vehicle service log. Track every vehicle's maintenance and repairs, keep service intervals honest with due-date and mileage reminders, log registrations and inspections, and watch what the car really costs per mile. Data lives on your NAS.
+  developer: tbolt
+  icon: icon.svg
+  screenshot_link:
+    - screenshot.svg
+  tagline:
+    en_US: Your service records, self-hosted
+  thumbnail: thumbnail.svg
+  tips:
+    before_install:
+      en_US: |
+        ## Garage Log
+
+        Data (vehicles, maintenance and repair logs, reminders, registrations) is stored on your ZimaOS disk at `/DATA/AppData/garage-log/`, so it survives container rebuilds and is shared across every browser on your network.
+  title:
+    en_US: Garage Log
+  index: /
+  port_map: "8194"
+  version: "1.0.0"
+  update_at: "2026-08-13"
+  release_notes:
+    en_US: |-
+      - Initial release: self-hosted vehicle service records with on-NAS storage.
+  website: "https://github.com/tboltsp951/zimaos-garage-log"
+  repo: "https://github.com/tboltsp951/zimaos-garage-log"
+  support: "https://github.com/tboltsp951/zimaos-garage-log/issues"

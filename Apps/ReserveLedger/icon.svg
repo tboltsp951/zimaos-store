@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0d878"/>
+      <stop offset="0.45" stop-color="#c9a227"/>
+      <stop offset="1" stop-color="#8a6f1c"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3e7ea"/>
+      <stop offset="1" stop-color="#a8adb4"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="100" fill="#16140f"/>
+  <path d="M108 300 L404 300 L378 404 L134 404 Z" fill="url(#silver)"/>
+  <path d="M100 300 L404 300 L374 402 L130 402 Z" fill="url(#silver)" stroke="#6f757c" stroke-width="5"/>
+  <path d="M148 132 L364 132 L396 288 L116 288 Z" fill="url(#gold)" stroke="#8a6f1c" stroke-width="5"/>
+  <path d="M168 162 L344 162 L372 260 L140 260 Z" fill="none" stroke="#8a6f1c" stroke-width="5"/>
+  <rect x="196" y="198" width="46" height="26" rx="3" fill="#8a6f1c" opacity="0.55"/>
+  <rect x="254" y="198" width="46" height="26" rx="3" fill="#8a6f1c" opacity="0.55"/>
+  <rect x="312" y="198" width="36" height="26" rx="3" fill="#8a6f1c" opacity="0.55"/>
+</svg>

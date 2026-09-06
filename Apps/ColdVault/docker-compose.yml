@@ -1,0 +1,66 @@
+name: cold-vault
+
+services:
+  cold-vault:
+    image: ghcr.io/tboltsp951/zimaos-crypto-vault:latest
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8193"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    container_name: cold-vault
+    x-casaos:
+      ports:
+        - container: "8080"
+          description:
+            en_US: "Cold Vault web UI"
+      volumes:
+        - container: /data
+          description:
+            en_US: "Crypto holdings, wallet locations, and portfolio data"
+    labels:
+      icon: "/Apps/ColdVault/icon.svg"
+
+x-casaos:
+  id: org.tbolt.coldvault
+  architectures:
+    - amd64
+    - arm64
+  main: cold-vault
+  author: tbolt
+  category: Finance
+  description:
+    en_US: A personal cold-vault portfolio for crypto holdings. Track coins across multiple locations (exchanges, cold wallets, hardware), with live CoinGecko pricing, manual balance entry, and an AI-free, server-side autosave to your NAS. Data lives on your NAS.
+  developer: tbolt
+  icon: "https://raw.githubusercontent.com/tboltsp951/zimaos-crypto-vault/main/Apps/ColdVault/icon.svg"
+  screenshot_link:
+    - "https://raw.githubusercontent.com/tboltsp951/zimaos-crypto-vault/main/Apps/ColdVault/screenshot.svg"
+  tagline:
+    en_US: Track crypto holdings across locations, self-hosted
+  thumbnail: "https://raw.githubusercontent.com/tboltsp951/zimaos-crypto-vault/main/Apps/ColdVault/thumbnail.svg"
+  tips:
+    before_install:
+      en_US: |
+        ## Cold Vault
+
+        Data (coin holdings, wallet locations, portfolio, AI-free server-side autosave) is stored on your ZimaOS disk at `/DATA/AppData/cold-vault/`, so it survives container rebuilds and is shared across every browser on your network.
+  title:
+    en_US: Cold Vault
+  index: /
+  port_map: "8193"
+  version: "1.0.0"
+  update_at: "2026-09-06"
+  release_notes:
+    en_US: |-
+      - Initial release: self-hosted crypto cold-vault portfolio.
+  website: "https://github.com/tboltsp951/zimaos-crypto-vault"
+  repo: "https://github.com/tboltsp951/zimaos-crypto-vault"
+  support: "https://github.com/tboltsp951/zimaos-crypto-vault/issues"
