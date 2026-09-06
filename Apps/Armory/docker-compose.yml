@@ -33,21 +33,19 @@ x-casaos:
   id: org.tbolt.armory
   architectures:
     - amd64
-    - "386"
     - arm64
-    - arm
   main: armory
   author: tbolt
   category: Productivity
   description:
     en_US: A lean, local-first firearms and ammunition inventory. Track every firearm with round counts, cleaning intervals, accuracy by load, and magazine spring service; count rounds on hand by caliber with rotation reminders for carry ammo; and manage reloading components, recipes, buildable counts, and per-round costs. Data lives on your NAS.
   developer: tbolt
-  icon: icon.svg
+  icon: "icon.svg"
   screenshot_link:
-    - screenshot.svg
+    - "screenshot.svg"
   tagline:
     en_US: Your safe, the rounds in it, and the load book, self-hosted
-  thumbnail: thumbnail.svg
+  thumbnail: "thumbnail.svg"
   tips:
     before_install:
       en_US: |

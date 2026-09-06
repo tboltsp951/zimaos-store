@@ -33,21 +33,19 @@ x-casaos:
   id: org.tbolt.fieldlog
   architectures:
     - amd64
-    - "386"
     - arm64
-    - arm
   main: field-log
   author: tbolt
   category: Productivity
   description:
     en_US: A lean, local-first field log for hunters and anglers. Track harvests, catches, and time afield; keep a freezer inventory cut by cut; score your stands, blinds, and launches by hit rate; and hold your gear list, licenses, and tags in one place. Data lives on your NAS.
   developer: tbolt
-  icon: icon.svg
+  icon: "icon.svg"
   screenshot_link:
-    - screenshot.svg
+    - "screenshot.svg"
   tagline:
     en_US: What you took, what you caught, where it came from
-  thumbnail: thumbnail.svg
+  thumbnail: "thumbnail.svg"
   tips:
     before_install:
       en_US: |

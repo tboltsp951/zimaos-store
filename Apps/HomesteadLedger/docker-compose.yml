@@ -27,27 +27,25 @@ services:
           description:
             en_US: "Ledger data (crops, harvests, inventory, task board)"
     labels:
-      icon: "/Apps/HomesteadLedger/icon.svg"
+      icon: "https://raw.githubusercontent.com/tboltsp951/zimaos-homestead-ledger/main/Apps/HomesteadLedger/icon.svg"
 
 x-casaos:
   id: org.tbolt.homesteadledger
   architectures:
     - amd64
-    - "386"
     - arm64
-    - arm
   main: homestead-ledger
   author: tbolt
   category: Productivity
   description:
     en_US: A lean, local-first homestead ledger. Track crops, harvests, preserves and produce inventory, supplies, task boards, and your yearly garden journal — all in one place. Data lives on your NAS.
   developer: tbolt
-  icon: icon.svg
+  icon: "icon.svg"
   screenshot_link:
-    - screenshot.svg
+    - "screenshot.svg"
   tagline:
     en_US: Your homestead ledger, self-hosted
-  thumbnail: thumbnail.svg
+  thumbnail: "thumbnail.svg"
   tips:
     before_install:
       en_US: |

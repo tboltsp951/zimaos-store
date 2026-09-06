@@ -33,21 +33,19 @@ x-casaos:
   id: org.tbolt.furrow
   architectures:
     - amd64
-    - "386"
     - arm64
-    - arm
   main: furrow
   author: tbolt
   category: Productivity
   description:
     en_US: A lean, local-first garden planner. Lay out beds on a grid, plan spacing for each plant, build a planting calendar from your frost dates, track tasks, and log every harvest. Data lives on your NAS.
   developer: tbolt
-  icon: icon.svg
+  icon: "icon.svg"
   screenshot_link:
-    - screenshot.svg
+    - "screenshot.svg"
   tagline:
     en_US: Plan the rows before you dig them
-  thumbnail: thumbnail.svg
+  thumbnail: "thumbnail.svg"
   tips:
     before_install:
       en_US: |

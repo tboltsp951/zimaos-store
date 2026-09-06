@@ -27,27 +27,25 @@ services:
           description:
             en_US: "Service records (vehicles, maintenance, repairs, renewals)"
     labels:
-      icon: "/Apps/GarageLog/icon.svg"
+      icon: "https://raw.githubusercontent.com/tboltsp951/zimaos-garage-log/main/Apps/GarageLog/icon.svg"
 
 x-casaos:
   id: org.tbolt.garagelog
   architectures:
     - amd64
-    - "386"
     - arm64
-    - arm
   main: garage-log
   author: tbolt
   category: Productivity
   description:
     en_US: A lean, local-first vehicle service log. Track every vehicle's maintenance and repairs, keep service intervals honest with due-date and mileage reminders, log registrations and inspections, and watch what the car really costs per mile. Data lives on your NAS.
   developer: tbolt
-  icon: icon.svg
+  icon: "icon.svg"
   screenshot_link:
-    - screenshot.svg
+    - "screenshot.svg"
   tagline:
     en_US: Your service records, self-hosted
-  thumbnail: thumbnail.svg
+  thumbnail: "thumbnail.svg"
   tips:
     before_install:
       en_US: |
