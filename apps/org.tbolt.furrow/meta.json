@@ -1,0 +1,35 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "author": "tbolt",
+  "category": "Productivity",
+  "description": "A lean, local-first garden planner. Lay out beds on a grid, plan spacing for each plant, build a planting calendar from your frost dates, track tasks, and log every harvest. Data lives on your NAS.",
+  "developer": "tbolt",
+  "screenshot_link": [
+    "/apps/org.tbolt.furrow/assets/screenshot.svg"
+  ],
+  "tagline": "Plan the rows before you dig them",
+  "thumbnail": "/apps/org.tbolt.furrow/assets/thumbnail.svg",
+  "tips": {
+    "before_install": "## Furrow\n\nData (beds, plant library, My Garden, frost dates, tasks, harvest log) is stored on your ZimaOS disk at `/DATA/AppData/furrow/`, so it survives container rebuilds and is shared across every browser on your network.\n"
+  },
+  "update_at": "2026-08-11",
+  "website": "https://github.com/tboltsp951/zimaos-furrow",
+  "repo": "https://github.com/tboltsp951/zimaos-furrow",
+  "support": "https://github.com/tboltsp951/zimaos-furrow/issues",
+  "title": "Furrow",
+  "release_note": "- Initial release: self-hosted garden planner with on-NAS storage.",
+  "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
+  "id": "org.tbolt.furrow",
+  "version": "1.0.0",
+  "categories": [
+    "productivity"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 48388148,
+    "arm64": 49047690
+  }
+}

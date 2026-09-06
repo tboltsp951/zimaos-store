@@ -1,0 +1,28 @@
+name: reserve-ledger
+
+services:
+  reserve-ledger:
+    image: ghcr.io/tboltsp951/zimaos-reserve-ledger:latest@sha256:51437eef2cb6ad603b191f1e1a0e08f7f95972e9b0b9bd57a32bb6ac0075c8ce
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8192"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    container_name: reserve-ledger
+x-casaos:
+  id: org.tbolt.reserve-ledger
+  main: reserve-ledger
+  icon: https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages/apps/org.tbolt.reserve-ledger/assets/icon.svg
+  title:
+    en_US: Reserve Ledger
+  index: /
+  port_map: "8192"
+  version: "1.0.0"

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#141b24"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.08" r="0.6">
+      <stop offset="0" stop-color="rgba(226,182,75,0.14)"/>
+      <stop offset="1" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#glow)"/>
+  <g transform="translate(548,120)">
+    <path d="M0 0 L100 0 L100 100 L0 100 Z" fill="#e2b64b" opacity="0" />
+    <path d="M92 -6 L196 90 L92 186 L-12 90 Z" fill="none" stroke="#e2b64b" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M92 34 L152 90 L92 146 L32 90 Z" fill="#e2b64b"/>
+  </g>
+  <text x="640" y="440" text-anchor="middle" font-family="'Arial Narrow', Arial, sans-serif" font-size="54" font-weight="700" letter-spacing="10" fill="#e6edf5">COLD VAULT</text>
+  <text x="640" y="486" text-anchor="middle" font-family="'Courier New', monospace" font-size="19" letter-spacing="3" fill="#7c8aa0">CRYPTO HOLDINGS · MULTI-LOCATION · LIVE PRICES</text>
+  <text x="640" y="540" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" letter-spacing="2" fill="#4ec9a3">balances entered by you · prices via CoinGecko</text>
+</svg>

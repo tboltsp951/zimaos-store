@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16140f"/>
+      <stop offset="1" stop-color="#2a2618"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0d878"/>
+      <stop offset="0.45" stop-color="#c9a227"/>
+      <stop offset="1" stop-color="#8a6f1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g transform="translate(500,64)">
+    <path d="M60 236 L300 236 L270 360 L90 360 Z" fill="#6f757c"/>
+    <path d="M30 236 L310 236 L278 358 L62 358 Z" fill="#a8adb4" stroke="#6f757c" stroke-width="6"/>
+    <path d="M62 104 L278 104 L318 258 L22 258 Z" fill="url(#gold)" stroke="#8a6f1c" stroke-width="6"/>
+    <path d="M82 130 L258 130 L290 232 L50 232 Z" fill="none" stroke="#8a6f1c" stroke-width="5"/>
+    <rect x="110" y="160" width="40" height="22" rx="3" fill="#8a6f1c" opacity="0.55"/>
+    <rect x="164" y="160" width="40" height="22" rx="3" fill="#8a6f1c" opacity="0.55"/>
+    <rect x="218" y="160" width="32" height="22" rx="3" fill="#8a6f1c" opacity="0.55"/>
+  </g>
+  <text x="640" y="590" text-anchor="middle" font-family="'Arial Narrow', Arial, sans-serif" font-size="50" font-weight="600" letter-spacing="8" fill="#ece4d3">RESERVE LEDGER</text>
+  <text x="640" y="636" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" letter-spacing="3" fill="#a89f8a">BULLION · COINS · BARS · ROUNDS</text>
+</svg>

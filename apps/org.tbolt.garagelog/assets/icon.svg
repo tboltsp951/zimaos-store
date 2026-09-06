@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#16181B"/>
+  <rect x="64" y="132" width="384" height="248" rx="22" fill="#282C31" stroke="#E4C64F" stroke-width="8"/>
+  <g font-family="'Courier New', monospace" font-weight="600" text-anchor="middle">
+    <g fill="#16181B">
+      <rect x="88" y="184" width="46" height="144" rx="3"/><text x="111" y="300" font-size="92" fill="#F5F2E9">1</text>
+      <rect x="140" y="184" width="46" height="144" rx="3"/><text x="163" y="300" font-size="92" fill="#F5F2E9">2</text>
+      <rect x="192" y="184" width="46" height="144" rx="3"/><text x="215" y="300" font-size="92" fill="#F5F2E9">4</text>
+      <rect x="244" y="184" width="46" height="144" rx="3"/><text x="267" y="300" font-size="92" fill="#F5F2E9">8</text>
+      <rect x="296" y="184" width="46" height="144" rx="3"/><text x="319" y="300" font-size="92" fill="#F5F2E9">6</text>
+      <rect x="348" y="184" width="46" height="144" rx="3" fill="#E4C64F"/><text x="371" y="300" font-size="92" fill="#16181B">4</text>
+    </g>
+  </g>
+  <circle cx="416" cy="356" r="34" fill="#B4392C"/>
+  <path d="M400 356 l11 11 l21 -24" fill="none" stroke="#F3F0E8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

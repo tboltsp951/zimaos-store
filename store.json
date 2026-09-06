@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "store_id": "io.github.tboltsp951.tbolt-apps",
+  "name": "Tbolt Apps",
+  "description": "Self-hosted, local-first apps by tbolt: Armory, Field Log, Furrow, Garage Log, Homestead Ledger, Reserve Ledger, Task Board, and Cold Vault. All data is stored on your NAS.",
+  "maintainer": {
+    "en_US": "tboltsp951"
+  },
+  "url": ""
+}

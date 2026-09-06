@@ -1,0 +1,176 @@
+{
+  "version": 2,
+  "updated_at": "2026-09-06T20:16:21Z",
+  "app_count": 8,
+  "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
+  "apps": [
+    {
+      "id": "org.tbolt.armory",
+      "title": "Armory",
+      "tagline": "Your safe, the rounds in it, and the load book, self-hosted",
+      "category": "Productivity",
+      "categories": [
+        "productivity"
+      ],
+      "author": "tbolt",
+      "developer": "tbolt",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/org.tbolt.armory/assets/icon.svg",
+      "thumbnail": "/apps/org.tbolt.armory/assets/thumbnail.svg",
+      "compose_url": "/apps/org.tbolt.armory/docker-compose.yml",
+      "meta_url": "/apps/org.tbolt.armory/meta.json",
+      "content_hash": "3ea544ad",
+      "version": "1.0.0"
+    },
+    {
+      "id": "org.tbolt.coldvault",
+      "title": "Cold Vault",
+      "tagline": "Track crypto holdings across locations, self-hosted",
+      "category": "Finance",
+      "categories": [
+        "finance"
+      ],
+      "author": "tbolt",
+      "developer": "tbolt",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/org.tbolt.coldvault/assets/icon.svg",
+      "thumbnail": "/apps/org.tbolt.coldvault/assets/thumbnail.svg",
+      "compose_url": "/apps/org.tbolt.coldvault/docker-compose.yml",
+      "meta_url": "/apps/org.tbolt.coldvault/meta.json",
+      "content_hash": "8f4d78d4",
+      "version": "1.0.0"
+    },
+    {
+      "id": "org.tbolt.fieldlog",
+      "title": "Field Log",
+      "tagline": "What you took, what you caught, where it came from",
+      "category": "Productivity",
+      "categories": [
+        "productivity"
+      ],
+      "author": "tbolt",
+      "developer": "tbolt",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/org.tbolt.fieldlog/assets/icon.svg",
+      "thumbnail": "/apps/org.tbolt.fieldlog/assets/thumbnail.svg",
+      "compose_url": "/apps/org.tbolt.fieldlog/docker-compose.yml",
+      "meta_url": "/apps/org.tbolt.fieldlog/meta.json",
+      "content_hash": "dd9438cd",
+      "version": "1.0.0"
+    },
+    {
+      "id": "org.tbolt.furrow",
+      "title": "Furrow",
+      "tagline": "Plan the rows before you dig them",
+      "category": "Productivity",
+      "categories": [
+        "productivity"
+      ],
+      "author": "tbolt",
+      "developer": "tbolt",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/org.tbolt.furrow/assets/icon.svg",
+      "thumbnail": "/apps/org.tbolt.furrow/assets/thumbnail.svg",
+      "compose_url": "/apps/org.tbolt.furrow/docker-compose.yml",
+      "meta_url": "/apps/org.tbolt.furrow/meta.json",
+      "content_hash": "d83d4d97",
+      "version": "1.0.0"
+    },
+    {
+      "id": "org.tbolt.garagelog",
+      "title": "Garage Log",
+      "tagline": "Your service records, self-hosted",
+      "category": "Productivity",
+      "categories": [
+        "productivity"
+      ],
+      "author": "tbolt",
+      "developer": "tbolt",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/org.tbolt.garagelog/assets/icon.svg",
+      "thumbnail": "/apps/org.tbolt.garagelog/assets/thumbnail.svg",
+      "compose_url": "/apps/org.tbolt.garagelog/docker-compose.yml",
+      "meta_url": "/apps/org.tbolt.garagelog/meta.json",
+      "content_hash": "be552e26",
+      "version": "1.0.0"
+    },
+    {
+      "id": "org.tbolt.homesteadledger",
+      "title": "Homestead Ledger",
+      "tagline": "Your homestead ledger, self-hosted",
+      "category": "Productivity",
+      "categories": [
+        "productivity"
+      ],
+      "author": "tbolt",
+      "developer": "tbolt",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/org.tbolt.homesteadledger/assets/icon.svg",
+      "thumbnail": "/apps/org.tbolt.homesteadledger/assets/thumbnail.svg",
+      "compose_url": "/apps/org.tbolt.homesteadledger/docker-compose.yml",
+      "meta_url": "/apps/org.tbolt.homesteadledger/meta.json",
+      "content_hash": "9cb730d6",
+      "version": "1.0.0"
+    },
+    {
+      "id": "org.tbolt.reserve-ledger",
+      "title": "Reserve Ledger",
+      "tagline": "Your bullion ledger, self-hosted",
+      "category": "Finance",
+      "categories": [
+        "finance"
+      ],
+      "author": "tbolt",
+      "developer": "tbolt",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/org.tbolt.reserve-ledger/assets/icon.svg",
+      "thumbnail": "/apps/org.tbolt.reserve-ledger/assets/thumbnail.svg",
+      "compose_url": "/apps/org.tbolt.reserve-ledger/docker-compose.yml",
+      "meta_url": "/apps/org.tbolt.reserve-ledger/meta.json",
+      "content_hash": "2c1757a0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "org.tbolt.taskboard",
+      "title": "Task Board",
+      "tagline": "Your task board, self-hosted",
+      "category": "Productivity",
+      "categories": [
+        "productivity"
+      ],
+      "author": "tbolt",
+      "developer": "tbolt",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/org.tbolt.taskboard/assets/icon.svg",
+      "thumbnail": "/apps/org.tbolt.taskboard/assets/thumbnail.svg",
+      "compose_url": "/apps/org.tbolt.taskboard/docker-compose.yml",
+      "meta_url": "/apps/org.tbolt.taskboard/meta.json",
+      "content_hash": "8f5dc66d",
+      "version": "1.0.0"
+    }
+  ]
+}

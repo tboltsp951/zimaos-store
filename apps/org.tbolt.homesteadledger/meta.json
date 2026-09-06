@@ -1,0 +1,35 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "author": "tbolt",
+  "category": "Productivity",
+  "description": "A lean, local-first homestead ledger. Track crops, harvests, preserves and produce inventory, supplies, task boards, and your yearly garden journal — all in one place. Data lives on your NAS.",
+  "developer": "tbolt",
+  "screenshot_link": [
+    "/apps/org.tbolt.homesteadledger/assets/screenshot.svg"
+  ],
+  "tagline": "Your homestead ledger, self-hosted",
+  "thumbnail": "/apps/org.tbolt.homesteadledger/assets/thumbnail.svg",
+  "tips": {
+    "before_install": "## Homestead Ledger\n\nData (crops, harvests, inventory, tasks, journal) is stored on your ZimaOS disk at `/DATA/AppData/homestead-ledger/`, so it survives container rebuilds and is shared across every browser on your network.\n"
+  },
+  "update_at": "2026-08-05",
+  "website": "https://github.com/tboltsp951/zimaos-homestead-ledger",
+  "repo": "https://github.com/tboltsp951/zimaos-homestead-ledger",
+  "support": "https://github.com/tboltsp951/zimaos-homestead-ledger/issues",
+  "title": "Homestead Ledger",
+  "release_note": "- Initial release: self-hosted homestead ledger with on-NAS storage.",
+  "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
+  "id": "org.tbolt.homesteadledger",
+  "version": "1.0.0",
+  "categories": [
+    "productivity"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 48401886,
+    "arm64": 49061428
+  }
+}

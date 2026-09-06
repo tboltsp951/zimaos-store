@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+  <rect width="1280" height="800" fill="#E7E3D8"/>
+  <rect x="0" y="0" width="1280" height="62" fill="#16181B"/>
+  <text x="30" y="42" font-family="'Arial Narrow', Impact, Arial, sans-serif" font-size="30" font-weight="800" fill="#E4C64F">GARAGE<span fill="#F3F0E8">LOG</span></text>
+  <text x="210" y="42" font-family="'Courier New', monospace" font-size="13" letter-spacing="2" fill="#767C84">SERVICE &amp; REPAIR RECORDS</text>
+  <rect x="1100" y="16" width="150" height="30" rx="2" fill="none" stroke="#767C84" stroke-width="2"/>
+  <text x="1122" y="36" font-family="Arial, sans-serif" font-size="13" fill="#F3F0E8">Export / backup</text>
+
+  <g font-family="'Arial Narrow', Impact, Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="28" y="80" width="150" height="36" rx="2" fill="#16181B"/><text x="44" y="104" fill="#E4C64F">SILVER TRUCK</text>
+    <rect x="184" y="80" width="120" height="36" rx="2" fill="none" stroke="#16181B" stroke-width="2"/><text x="200" y="104" fill="#16181B">WRANGLER</text>
+    <rect x="310" y="80" width="110" height="36" rx="2" fill="none" stroke="#767C84" stroke-width="2" stroke-dasharray="6 4"/><text x="326" y="104" fill="#767C84">+ VEHICLE</text>
+  </g>
+
+  <rect x="28" y="140" width="280" height="130" rx="3" fill="#282C31"/>
+  <g font-family="'Courier New', monospace" font-weight="600" text-anchor="middle">
+    <rect x="42" y="168" width="36" height="88" rx="2" fill="#16181B"/><text x="60" y="236" font-size="60" fill="#F5F2E9">1</text>
+    <rect x="82" y="168" width="36" height="88" rx="2" fill="#16181B"/><text x="100" y="236" font-size="60" fill="#F5F2E9">2</text>
+    <rect x="122" y="168" width="36" height="88" rx="2" fill="#16181B"/><text x="140" y="236" font-size="60" fill="#F5F2E9">4</text>
+    <rect x="162" y="168" width="36" height="88" rx="2" fill="#16181B"/><text x="180" y="236" font-size="60" fill="#F5F2E9">8</text>
+    <rect x="202" y="168" width="36" height="88" rx="2" fill="#16181B"/><text x="220" y="236" font-size="60" fill="#F5F2E9">6</text>
+    <rect x="242" y="168" width="36" height="88" rx="2" fill="#E4C64F"/><text x="260" y="236" font-size="60" fill="#16181B">4</text>
+  </g>
+
+  <text x="330" y="196" font-family="'Arial Narrow', Impact, Arial, sans-serif" font-size="38" font-weight="800" fill="#16181B">THE SILVER TRUCK</text>
+  <rect x="330" y="210" width="120" height="26" rx="3" fill="#F3F0E8" stroke="#16181B" stroke-width="2"/>
+  <text x="346" y="229" font-family="'Courier New', monospace" font-size="13" font-weight="600" letter-spacing="2" fill="#16181B">ABC 1234</text>
+  <text x="330" y="270" font-family="'Courier New', monospace" font-size="12" letter-spacing="2" fill="#767C84">2016 TOYOTA TACOMA</text>
+
+  <g font-family="'Courier New', monospace">
+    <rect x="330" y="290" width="145" height="66" fill="#F3F0E8" stroke="#C9C4B6"/>
+    <text x="344" y="312" font-size="10" letter-spacing="2" fill="#767C84">TOTAL SPENT</text>
+    <text x="344" y="338" font-size="20" font-weight="600" fill="#16181B">$8,412</text>
+    <rect x="478" y="290" width="145" height="66" fill="#F3F0E8" stroke="#C9C4B6"/>
+    <text x="492" y="312" font-size="10" letter-spacing="2" fill="#767C84">MAINTENANCE</text>
+    <text x="492" y="338" font-size="20" font-weight="600" fill="#16181B">$4,960</text>
+    <rect x="626" y="290" width="145" height="66" fill="#F3F0E8" stroke="#C9C4B6"/>
+    <text x="640" y="312" font-size="10" letter-spacing="2" fill="#767C84">REPAIRS</text>
+    <text x="640" y="338" font-size="20" font-weight="600" fill="#16181B">$2,780</text>
+    <rect x="774" y="290" width="145" height="66" fill="#F3F0E8" stroke="#C9C4B6"/>
+    <text x="788" y="312" font-size="10" letter-spacing="2" fill="#767C84">FEES</text>
+    <text x="788" y="338" font-size="20" font-weight="600" fill="#16181B">$672</text>
+    <rect x="922" y="290" width="145" height="66" fill="#F3F0E8" stroke="#C9C4B6"/>
+    <text x="936" y="312" font-size="10" letter-spacing="2" fill="#767C84">COST / MILE</text>
+    <text x="936" y="338" font-size="20" font-weight="600" fill="#16181B">$0.19</text>
+  </g>
+
+  <text x="28" y="420" font-family="'Arial Narrow', Impact, Arial, sans-serif" font-size="26" font-weight="700" fill="#16181B">WHAT'S DUE</text>
+  <text x="150" y="420" font-family="'Courier New', monospace" font-size="11" letter-spacing="1" fill="#767C84">3 TRACKED</text>
+
+  <rect x="28" y="440" width="300" height="132" fill="#F3F0E8" stroke="#C9C4B6" stroke-width="1.5"/>
+  <rect x="28" y="440" width="8" height="132" fill="#B4392C"/>
+  <text x="52" y="470" font-family="'Arial Narrow', Impact, Arial, sans-serif" font-size="20" font-weight="700" fill="#16181B">OIL CHANGE</text>
+  <text x="52" y="492" font-family="'Courier New', monospace" font-size="11" font-weight="600" fill="#B4392C">OVERDUE</text>
+  <text x="52" y="514" font-family="'Courier New', monospace" font-size="11" fill="#16181B">Next at 132,400 mi — in 2,156 mi</text>
+  <text x="52" y="534" font-family="'Courier New', monospace" font-size="11" fill="#767C84">Last done Aug 3, 2026 at 128,000 mi</text>
+  <rect x="52" y="548" width="252" height="22" rx="2" fill="none" stroke="#16181B" stroke-width="1.5"/>
+  <text x="64" y="563" font-family="Arial, sans-serif" font-size="11" fill="#16181B">Mark done today</text>
+
+  <rect x="340" y="440" width="300" height="132" fill="#F3F0E8" stroke="#C9C4B6" stroke-width="1.5"/>
+  <rect x="340" y="440" width="8" height="132" fill="#E4C64F"/>
+  <text x="364" y="470" font-family="'Arial Narrow', Impact, Arial, sans-serif" font-size="20" font-weight="700" fill="#16181B">STATE INSPECTION</text>
+  <text x="364" y="492" font-family="'Courier New', monospace" font-size="11" font-weight="600" fill="#8A6D10">COMING UP</text>
+  <text x="364" y="514" font-family="'Courier New', monospace" font-size="11" fill="#16181B">Due in 21 days</text>
+  <text x="364" y="534" font-family="'Courier New', monospace" font-size="11" fill="#767C84">Expires Sep 3, 2026</text>
+  <rect x="364" y="548" width="252" height="22" rx="2" fill="none" stroke="#16181B" stroke-width="1.5"/>
+  <text x="376" y="563" font-family="Arial, sans-serif" font-size="11" fill="#16181B">Mark renewed today</text>
+
+  <rect x="652" y="440" width="300" height="132" fill="#F3F0E8" stroke="#C9C4B6" stroke-width="1.5"/>
+  <rect x="652" y="440" width="8" height="132" fill="#3F6B52"/>
+  <text x="676" y="470" font-family="'Arial Narrow', Impact, Arial, sans-serif" font-size="20" font-weight="700" fill="#16181B">TIRE ROTATION</text>
+  <text x="676" y="492" font-family="'Courier New', monospace" font-size="11" font-weight="600" fill="#3F6B52">ON SCHEDULE</text>
+  <text x="676" y="514" font-family="'Courier New', monospace" font-size="11" fill="#16181B">Next at 136,000 mi — in 6,000 mi</text>
+  <text x="676" y="534" font-family="'Courier New', monospace" font-size="11" fill="#767C84">Last done May 12, 2026 at 128,000 mi</text>
+  <rect x="676" y="548" width="252" height="22" rx="2" fill="none" stroke="#16181B" stroke-width="1.5"/>
+  <text x="688" y="563" font-family="Arial, sans-serif" font-size="11" fill="#16181B">Mark done today</text>
+
+  <text x="28" y="610" font-family="'Arial Narrow', Impact, Arial, sans-serif" font-size="26" font-weight="700" fill="#16181B">MAINTENANCE LOG</text>
+  <text x="180" y="610" font-family="'Courier New', monospace" font-size="11" letter-spacing="1" fill="#767C84">12 RECORDS &middot; $4,960</text>
+
+  <g font-family="'Courier New', monospace" font-size="13">
+    <text x="28" y="636" font-weight="600" fill="#767C84">DATE</text>
+    <text x="180" y="636" font-weight="600" fill="#767C84">SERVICE</text>
+    <text x="560" y="636" font-weight="600" fill="#767C84">ODOMETER</text>
+    <text x="700" y="636" font-weight="600" fill="#767C84">COST</text>
+    <text x="780" y="636" font-weight="600" fill="#767C84">NOTES</text>
+    <rect x="28" y="644" width="1224" height="3" fill="#16181B"/>
+
+    <text x="28" y="670" fill="#16181B">Aug 3, 2026</text>
+    <text x="180" y="670" font-weight="600" fill="#16181B">Oil change</text>
+    <text x="180" y="686" font-size="11" fill="#767C84">QUICK LANE</text>
+    <text x="560" y="670" fill="#16181B">128,000 mi</text>
+    <text x="700" y="670" font-weight="600" fill="#16181B">$68</text>
+    <text x="780" y="670" font-size="12" fill="#767C84">Full synthetic, filter.</text>
+
+    <text x="28" y="704" fill="#16181B">May 12, 2026</text>
+    <text x="180" y="704" font-weight="600" fill="#16181B">Tire rotation</text>
+    <text x="180" y="720" font-size="11" fill="#767C84">MYSELF</text>
+    <text x="560" y="704" fill="#16181B">127,000 mi</text>
+    <text x="700" y="704" font-weight="600" fill="#16181B">$0</text>
+    <text x="780" y="704" font-size="12" fill="#767C84">Cross-rotated, balanced.</text>
+  </g>
+</svg>

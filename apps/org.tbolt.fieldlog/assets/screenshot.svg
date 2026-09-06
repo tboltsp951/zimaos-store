@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+  <rect width="1280" height="800" fill="#E6E5DA"/>
+  <g fill="none" stroke="#7E9A82" stroke-width="1.5" opacity="0.5">
+    <path d="M-40 210 C 120 160, 240 230, 400 180 S 700 120, 900 180 S 1160 240, 1340 170"/>
+    <path d="M-40 180 C 140 130, 260 200, 420 150 S 720 90, 920 150 S 1180 210, 1340 140"/>
+  </g>
+  <rect x="40" y="24" width="1200" height="760" rx="16" fill="none" stroke="#C6C6B5" stroke-width="3"/>
+  <g filter="url(#sh)" filter_ignore="1">
+  <rect x="60" y="44" width="1160" height="108" rx="10" fill="#1F2B25"/>
+  <text x="88" y="92" font-family="'Iowan Old Style', Georgia, serif" font-size="34" fill="#E9E8DC">Field Log</text>
+  <text x="88" y="118" font-size="13" fill="#9FAE9F">What you took, what you caught, where it came from.</text>
+  <g stroke="#D5D3C3" stroke-width="3.5" stroke-linecap="round">
+    <line x1="520" y1="92" x2="520" y2="124"/><line x1="533" y1="92" x2="533" y2="124"/><line x1="546" y1="92" x2="546" y2="124"/><line x1="559" y1="92" x2="559" y2="124"/><line x1="514" y1="118" x2="565" y2="98"/>
+  </g>
+  <text x="470" y="84" font-family="Georgia, serif" font-size="24" fill="#E9E8DC">3</text><text x="576" y="84" font-size="11" fill="#9FAE9F">harvests</text>
+  <g stroke="#D5D3C3" stroke-width="3.5" stroke-linecap="round">
+    <line x1="680" y1="92" x2="680" y2="124"/><line x1="693" y1="92" x2="693" y2="124"/><line x1="706" y1="92" x2="706" y2="124"/><line x1="719" y1="92" x2="719" y2="124"/><line x1="674" y1="118" x2="725" y2="98"/>
+  </g>
+  <text x="630" y="84" font-family="Georgia, serif" font-size="24" fill="#E9E8DC">7</text><text x="736" y="84" font-size="11" fill="#9FAE9F">fish</text>
+  <g stroke="#D5D3C3" stroke-width="3.5" stroke-linecap="round">
+    <line x1="840" y1="92" x2="840" y2="124"/><line x1="853" y1="92" x2="853" y2="124"/><line x1="866" y1="92" x2="866" y2="124"/><line x1="879" y1="92" x2="879" y2="124"/><line x1="834" y1="118" x2="885" y2="98"/>
+  </g>
+  <text x="788" y="84" font-family="Georgia, serif" font-size="24" fill="#E9E8DC">18</text><text x="896" y="84" font-size="11" fill="#9FAE9F">days afield</text>
+  <rect x="1080" y="56" width="120" height="46" rx="6" fill="#1F2B25" stroke="#46564C"/>
+  <text x="1140" y="85" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#E9E8DC">2026</text>
+  </g>
+  <rect x="60" y="182" width="1160" height="54" rx="8" fill="#F1F0E7" stroke="#C6C6B5"/>
+  <rect x="60" y="182" width="6" height="54" rx="3" fill="#DB5A14"/>
+  <text x="88" y="204" font-family="'Iowan Old Style', Georgia, serif" font-size="19" fill="#1F2B25">You're licensed for 2026–27</text>
+  <text x="88" y="224" font-size="13" fill="#4B5A52">Bought Aug 1. Renewal opens in 329 days.</text>
+  <g>
+    <rect x="900" y="194" width="150" height="30" rx="15" fill="#8E4326"/>
+    <text x="975" y="214" text-anchor="middle" font-size="13" fill="#FFFFFF">Tags &amp; stamps</text>
+    <rect x="1060" y="194" width="140" height="30" rx="6" fill="#F1F0E7" stroke="#C6C6B5"/>
+    <text x="1130" y="214" text-anchor="middle" font-size="13" fill="#1F2B25">Past licenses</text>
+  </g>
+  <g font-family="'Iowan Old Style', Georgia, serif">
+    <text x="60" y="285" font-size="20" fill="#1F2B25">Harvests</text>
+    <text x="150" y="285" font-size="13" fill="#71806f">3</text>
+    <text x="240" y="285" font-size="20" fill="#1F2B25">Catches</text>
+    <text x="330" y="285" font-size="13" fill="#71806f">7</text>
+    <text x="420" y="285" font-size="20" fill="#1F2B25">Time out</text>
+    <text x="530" y="285" font-size="13" fill="#71806f">11</text>
+    <text x="600" y="285" font-size="20" fill="#1F2B25">Spots</text>
+    <text x="680" y="285" font-size="13" fill="#71806f">6</text>
+    <text x="760" y="285" font-size="20" fill="#1F2B25">Gear</text>
+    <text x="830" y="285" font-size="13" fill="#71806f">24</text>
+    <text x="910" y="285" font-size="20" fill="#1F2B25">Freezer</text>
+    <text x="1000" y="285" font-size="13" fill="#71806f">42</text>
+    <text x="1080" y="285" font-size="20" fill="#DB5A14">Season</text>
+  </g>
+  <line x1="60" y1="300" x2="1220" y2="300" stroke="#C6C6B5" stroke-width="2"/>
+  <line x1="60" y1="352" x2="1220" y2="352" stroke="#C6C6B5" stroke-width="2"/>
+  <g>
+    <rect x="60" y="316" width="560" height="30" rx="15" fill="#F1F0E7" stroke="#C6C6B5"/>
+    <text x="80" y="336" font-size="13" fill="#71806f">Search</text>
+    <rect x="640" y="316" width="140" height="30" rx="6" fill="#F1F0E7" stroke="#C6C6B5"/>
+    <text x="660" y="336" font-size="13" fill="#71806f">Newest first</text>
+    <rect x="1120" y="312" width="100" height="36" rx="6" fill="#DB5A14"/>
+    <text x="1170" y="335" text-anchor="middle" font-size="14" fill="#FFFFFF">Log a harvest</text>
+  </g>
+  <g>
+    <rect x="60" y="372" width="1160" height="64" rx="9" fill="#F1F0E7" stroke="#D6D5C7"/>
+    <rect x="60" y="372" width="5" height="64" rx="2" fill="#8E4326"/>
+    <text x="92" y="398" font-family="Georgia, serif" font-size="26" fill="#1F2B25">14</text>
+    <text x="92" y="420" font-size="12" fill="#4B5A52">Oct 2026</text>
+    <text x="196" y="405" font-family="'Iowan Old Style', Georgia, serif" font-size="21" fill="#1F2B25">Whitetail deer <tspan fill="#4B5A52" font-size="16">Buck</tspan></text>
+    <text x="196" y="426" font-size="12.5" fill="#4B5A52">Creek bottom ladder · 195 lb · 8 pt</text>
+    <text x="930" y="404" font-size="12.5" fill="#4B5A52">Edit   Delete</text>
+  </g>
+  <g>
+    <rect x="60" y="446" width="1160" height="64" rx="9" fill="#FFFFFF" stroke="#D6D5C7"/>
+    <rect x="60" y="446" width="5" height="64" rx="2" fill="#8E4326"/>
+    <text x="92" y="472" font-family="Georgia, serif" font-size="26" fill="#1F2B25">8</text>
+    <text x="92" y="494" font-size="12" fill="#4B5A52">Oct 2026</text>
+    <text x="196" y="479" font-family="'Iowan Old Style', Georgia, serif" font-size="21" fill="#1F2B25">Wild turkey <tspan fill="#4B5A52" font-size="16">Tom</tspan></text>
+    <text x="196" y="500" font-size="12.5" fill="#4B5A52">North food plot · 21 lb · Ruger M77</text>
+    <text x="930" y="478" font-size="12.5" fill="#4B5A52">Edit   Delete</text>
+  </g>
+  <g>
+    <rect x="60" y="520" width="560" height="210" rx="10" fill="#F1F0E7" stroke="#C6C6B5"/>
+    <rect x="60" y="520" width="5" height="210" rx="2" fill="#DB5A14"/>
+    <text x="88" y="554" font-family="'Iowan Old Style', Georgia, serif" font-size="20" fill="#1F2B25">2026 month by month</text>
+    <g>
+      <rect x="88" y="580" width="38" height="70" fill="#8E4326" opacity="0.9"/>
+      <rect x="136" y="580" width="38" height="52" fill="#8E4326" opacity="0.75"/>
+      <rect x="184" y="580" width="38" height="88" fill="#8E4326" opacity="0.9"/>
+      <rect x="232" y="580" width="38" height="34" fill="#8E4326" opacity="0.6"/>
+      <rect x="280" y="580" width="38" height="56" fill="#2E5C6B" opacity="0.85"/>
+      <rect x="328" y="580" width="38" height="40" fill="#2E5C6B" opacity="0.7"/>
+      <rect x="376" y="580" width="38" height="20" fill="#2E5C6B" opacity="0.5"/>
+      <text x="107" y="590" font-size="11" fill="#FFFFFF">Jan</text>
+      <text x="155" y="590" font-size="11" fill="#FFFFFF">Feb</text>
+      <text x="203" y="590" font-size="11" fill="#FFFFFF">Mar</text>
+      <text x="251" y="590" font-size="11" fill="#FFFFFF">Apr</text>
+      <text x="299" y="590" font-size="11" fill="#FFFFFF">May</text>
+      <text x="347" y="590" font-size="11" fill="#FFFFFF">Jun</text>
+      <text x="395" y="590" font-size="11" fill="#FFFFFF">Jul</text>
+      <text x="404" y="666" font-size="12" fill="#C6C6B5" font-family="Arial">Jul</text>
+    </g>
+    <rect x="508" y="584" width="10" height="10" rx="2" fill="#8E4326"/>
+    <text x="526" y="594" font-size="12" fill="#4B5A52">Harvests</text>
+    <rect x="508" y="606" width="10" height="10" rx="2" fill="#2E5C6B"/>
+    <text x="526" y="616" font-size="12" fill="#4B5A52">Fish</text>
+  </g>
+  <g>
+    <rect x="640" y="520" width="580" height="210" rx="10" fill="#F1F0E7" stroke="#C6C6B5"/>
+    <text x="668" y="554" font-family="'Iowan Old Style', Georgia, serif" font-size="20" fill="#1F2B25">Spot performance</text>
+    <text x="668" y="580" font-size="12" fill="#71806f">The stands worth the walk</text>
+    <text x="668" y="614" font-family="Georgia, serif" font-size="16" fill="#1F2B25">Creek bottom</text>
+    <rect x="780" y="602" width="260" height="14" rx="3" fill="rgba(31,43,37,0.09)"/>
+    <rect x="780" y="602" width="182" height="14" rx="3" fill="#5A6136"/>
+    <text x="1060" y="614" font-family="Georgia, serif" font-size="15" fill="#4B5A52">70%</text>
+    <text x="668" y="650" font-family="Georgia, serif" font-size="16" fill="#1F2B25">North food plot</text>
+    <rect x="780" y="638" width="260" height="14" rx="3" fill="rgba(31,43,37,0.09)"/>
+    <rect x="780" y="638" width="174" height="14" rx="3" fill="#5A6136"/>
+    <text x="1060" y="650" font-family="Georgia, serif" font-size="15" fill="#4B5A52">67%</text>
+    <text x="668" y="686" font-family="Georgia, serif" font-size="16" fill="#1F2B25">Honeymoon launch</text>
+    <rect x="780" y="674" width="260" height="14" rx="3" fill="rgba(31,43,37,0.09)"/>
+    <rect x="780" y="674" width="104" height="14" rx="3" fill="#5A6136"/>
+    <text x="1060" y="686" font-family="Georgia, serif" font-size="15" fill="#4B5A52">40%</text>
+  </g>
+  <text x="640" y="768" text-anchor="middle" font-size="12" fill="#71806f">Data lives on your NAS at /DATA/AppData/field-log/</text>
+</svg>

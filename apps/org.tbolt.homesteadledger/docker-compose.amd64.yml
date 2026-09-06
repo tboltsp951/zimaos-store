@@ -1,0 +1,28 @@
+name: homestead-ledger
+
+services:
+  homestead-ledger:
+    image: ghcr.io/tboltsp951/zimaos-homestead-ledger:latest@sha256:a7cc25f0102d7cd221e2ce20b63649c6df9750c67332f1803a549263b73bf591
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8190"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    container_name: homestead-ledger
+x-casaos:
+  id: org.tbolt.homesteadledger
+  main: homestead-ledger
+  icon: https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages/apps/org.tbolt.homesteadledger/assets/icon.svg
+  title:
+    en_US: Homestead Ledger
+  index: /
+  port_map: "8190"
+  version: "1.0.0"

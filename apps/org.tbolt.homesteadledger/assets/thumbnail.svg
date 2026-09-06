@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#111922"/>
+      <stop offset="1" stop-color="#1E3328"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g transform="translate(485,120)">
+    <path d="M0 96 L155 8 L310 96 L286 252 L24 252 Z" fill="#9C3326" stroke="#7C281D" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="34" y="100" width="242" height="14" rx="7" fill="#B07D17"/>
+    <rect x="116" y="130" width="48" height="132" fill="#E7EAE0"/>
+    <line x1="140" y1="130" x2="140" y2="262" stroke="#7C281D" stroke-width="4"/>
+    <path d="M12 252 L140 284 L268 252" fill="none" stroke="#7C281D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="50" cy="190" r="12" fill="#356C6B"/>
+    <circle cx="90" cy="166" r="12" fill="#3F6B43"/>
+    <circle cx="228" cy="170" r="12" fill="#E7EAE0"/>
+  </g>
+  <text x="640" y="586" text-anchor="middle" font-family="'Arial Narrow', Arial, sans-serif" font-size="44" font-weight="600" letter-spacing="8" fill="#E9EDF1">HOMESTEAD LEDGER</text>
+  <text x="640" y="632" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" letter-spacing="3" fill="#8397A8">CROPS · HARVESTS · STORES · JOURNAL</text>
+</svg>

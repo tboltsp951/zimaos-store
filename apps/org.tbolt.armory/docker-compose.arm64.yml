@@ -1,0 +1,28 @@
+name: armory
+
+services:
+  armory:
+    image: ghcr.io/tboltsp951/zimaos-armory:latest@sha256:88381799d4eb3443a49f6c84c39b3c6de51a512115b17dcc69f31867002e7f20
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8196"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    container_name: armory
+x-casaos:
+  id: org.tbolt.armory
+  main: armory
+  icon: https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages/apps/org.tbolt.armory/assets/icon.svg
+  title:
+    en_US: Armory
+  index: /
+  port_map: "8196"
+  version: "1.0.0"

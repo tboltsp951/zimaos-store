@@ -1,0 +1,28 @@
+name: furrow
+
+services:
+  furrow:
+    image: ghcr.io/tboltsp951/zimaos-furrow:latest@sha256:6f2bf7668899f9a97a69dd0e4d11373bffc1717d8231bb43b9131126e76b9f44
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8191"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    container_name: furrow
+x-casaos:
+  id: org.tbolt.furrow
+  main: furrow
+  icon: https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages/apps/org.tbolt.furrow/assets/icon.svg
+  title:
+    en_US: Furrow
+  index: /
+  port_map: "8191"
+  version: "1.0.0"

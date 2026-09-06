@@ -1,0 +1,35 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "author": "tbolt",
+  "category": "Productivity",
+  "description": "A lean, local-first field log for hunters and anglers. Track harvests, catches, and time afield; keep a freezer inventory cut by cut; score your stands, blinds, and launches by hit rate; and hold your gear list, licenses, and tags in one place. Data lives on your NAS.",
+  "developer": "tbolt",
+  "screenshot_link": [
+    "/apps/org.tbolt.fieldlog/assets/screenshot.svg"
+  ],
+  "tagline": "What you took, what you caught, where it came from",
+  "thumbnail": "/apps/org.tbolt.fieldlog/assets/thumbnail.svg",
+  "tips": {
+    "before_install": "## Field Log\n\nData (harvests, catches, sits, spots, gear, freezer inventory, licenses and tags) is stored on your ZimaOS disk at `/DATA/AppData/field-log/`, so it survives container rebuilds and is shared across every browser on your network.\n"
+  },
+  "update_at": "2026-09-06",
+  "website": "https://github.com/tboltsp951/zimaos-field-log",
+  "repo": "https://github.com/tboltsp951/zimaos-field-log",
+  "support": "https://github.com/tboltsp951/zimaos-field-log/issues",
+  "title": "Field Log",
+  "release_note": "- Initial release: self-hosted harvest & catch log with on-NAS storage.",
+  "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
+  "id": "org.tbolt.fieldlog",
+  "version": "1.0.0",
+  "categories": [
+    "productivity"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 48391470,
+    "arm64": 49051012
+  }
+}

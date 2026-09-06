@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#142A1E"/>
+      <stop offset="1" stop-color="#1F3B2C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g transform="translate(540,90)">
+    <rect x="0" y="78" width="200" height="140" rx="18" fill="#142A1E" stroke="#6B8F71" stroke-width="5"/>
+    <rect x="16" y="94" width="168" height="108" rx="10" fill="#7C4A24"/>
+    <rect x="16" y="110" width="168" height="6" rx="3" fill="#E3B23C" opacity="0.92"/>
+    <rect x="16" y="142" width="168" height="6" rx="3" fill="#E3B23C" opacity="0.92"/>
+    <rect x="16" y="174" width="168" height="6" rx="3" fill="#E3B23C" opacity="0.92"/>
+    <path d="M100 84 C 95 60 88 48 76 36" fill="none" stroke="#A8C0A5" stroke-width="8" stroke-linecap="round"/>
+    <path d="M100 82 C 105 60 112 50 124 38" fill="none" stroke="#A8C0A5" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="72" cy="34" r="14" fill="#A8C0A5"/>
+    <circle cx="128" cy="34" r="14" fill="#A8C0A5"/>
+  </g>
+  <text x="640" y="560" text-anchor="middle" font-family="'Arial Narrow', Arial, sans-serif" font-size="52" font-weight="600" letter-spacing="8" fill="#F2EEE1">FURROW</text>
+  <text x="640" y="610" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" letter-spacing="3" fill="#A8C0A5">PLAN THE ROWS BEFORE YOU DIG THEM</text>
+</svg>

@@ -1,0 +1,35 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "author": "tbolt",
+  "category": "Productivity",
+  "description": "A lean, local-first task board. Add tasks with quick-add syntax (#tags, +subtasks, due dates), assign people, track progress, and get a weekly digest. Data lives on your NAS.",
+  "developer": "tbolt",
+  "screenshot_link": [
+    "/apps/org.tbolt.taskboard/assets/screenshot-1.webp"
+  ],
+  "tagline": "Your task board, self-hosted",
+  "thumbnail": "/apps/org.tbolt.taskboard/assets/thumbnail.svg",
+  "tips": {
+    "before_install": "## Task Board\n\nData (tasks, people, activity log) is stored on your ZimaOS disk at `/DATA/AppData/task-board/`, so it survives container rebuilds and is shared across every browser on your network.\n"
+  },
+  "update_at": "2026-08-03",
+  "website": "https://github.com/tboltsp951/zimaos-taskboard",
+  "repo": "https://github.com/tboltsp951/zimaos-taskboard",
+  "support": "https://github.com/tboltsp951/zimaos-taskboard/issues",
+  "title": "Task Board",
+  "release_note": "- Initial release: self-hosted task board with on-NAS storage.",
+  "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
+  "id": "org.tbolt.taskboard",
+  "version": "1.0.0",
+  "categories": [
+    "productivity"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 48384352,
+    "arm64": 49043899
+  }
+}

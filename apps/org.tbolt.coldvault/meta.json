@@ -1,0 +1,35 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "author": "tbolt",
+  "category": "Finance",
+  "description": "A personal cold-vault portfolio for crypto holdings. Track coins across multiple locations (exchanges, cold wallets, hardware), with live CoinGecko pricing, manual balance entry, and an AI-free, server-side autosave to your NAS. Data lives on your NAS.",
+  "developer": "tbolt",
+  "screenshot_link": [
+    "/apps/org.tbolt.coldvault/assets/screenshot.svg"
+  ],
+  "tagline": "Track crypto holdings across locations, self-hosted",
+  "thumbnail": "/apps/org.tbolt.coldvault/assets/thumbnail.svg",
+  "tips": {
+    "before_install": "## Cold Vault\n\nData (coin holdings, wallet locations, portfolio, AI-free server-side autosave) is stored on your ZimaOS disk at `/DATA/AppData/cold-vault/`, so it survives container rebuilds and is shared across every browser on your network.\n"
+  },
+  "update_at": "2026-09-06",
+  "website": "https://github.com/tboltsp951/zimaos-crypto-vault",
+  "repo": "https://github.com/tboltsp951/zimaos-crypto-vault",
+  "support": "https://github.com/tboltsp951/zimaos-crypto-vault/issues",
+  "title": "Cold Vault",
+  "release_note": "- Initial release: self-hosted crypto cold-vault portfolio.",
+  "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
+  "id": "org.tbolt.coldvault",
+  "version": "1.0.0",
+  "categories": [
+    "finance"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 48374379,
+    "arm64": 49033921
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "author": "tbolt",
+  "category": "Productivity",
+  "description": "A lean, local-first firearms and ammunition inventory. Track every firearm with round counts, cleaning intervals, accuracy by load, and magazine spring service; count rounds on hand by caliber with rotation reminders for carry ammo; and manage reloading components, recipes, buildable counts, and per-round costs. Data lives on your NAS.",
+  "developer": "tbolt",
+  "screenshot_link": [
+    "/apps/org.tbolt.armory/assets/screenshot.svg"
+  ],
+  "tagline": "Your safe, the rounds in it, and the load book, self-hosted",
+  "thumbnail": "/apps/org.tbolt.armory/assets/thumbnail.svg",
+  "tips": {
+    "before_install": "## Armory\n\nData (firearms, ammunition, reloading components, load recipes, magazines, and your range log) is stored on your ZimaOS disk at `/DATA/AppData/armory/`, so it survives container rebuilds and is shared across every browser on your network.\n"
+  },
+  "update_at": "2026-09-06",
+  "website": "https://github.com/tboltsp951/zimaos-armory",
+  "repo": "https://github.com/tboltsp951/zimaos-armory",
+  "support": "https://github.com/tboltsp951/zimaos-armory/issues",
+  "title": "Armory",
+  "release_note": "- Initial release: self-hosted firearms & ammunition inventory with on-NAS storage.",
+  "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
+  "id": "org.tbolt.armory",
+  "version": "1.0.0",
+  "categories": [
+    "productivity"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 48395469,
+    "arm64": 49055011
+  }
+}

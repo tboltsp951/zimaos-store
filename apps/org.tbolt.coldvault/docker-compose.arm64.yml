@@ -1,0 +1,28 @@
+name: cold-vault
+
+services:
+  cold-vault:
+    image: ghcr.io/tboltsp951/zimaos-crypto-vault:latest@sha256:6721ef6257b8e3024e6ddb6efffc778b915646372523e375812eec4959dcf317
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8193"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    container_name: cold-vault
+x-casaos:
+  id: org.tbolt.coldvault
+  main: cold-vault
+  icon: https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages/apps/org.tbolt.coldvault/assets/icon.svg
+  title:
+    en_US: Cold Vault
+  index: /
+  port_map: "8193"
+  version: "1.0.0"

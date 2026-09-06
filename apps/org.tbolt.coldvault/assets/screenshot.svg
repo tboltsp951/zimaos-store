@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+  <rect width="1280" height="800" fill="#0d1117"/>
+
+  <g transform="translate(40,36)">
+    <rect width="42" height="42" rx="11" fill="#1b2430" stroke="#26313f"/>
+    <path d="M21 8 L34 21 L21 34 L8 21 Z" fill="#e2b64b"/>
+  </g>
+  <text x="96" y="66" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#e6edf5">My Portfolio</text>
+  <text x="96" y="84" font-family="Arial, sans-serif" font-size="13" fill="#7c8aa0">Combined crypto holdings</text>
+
+  <g transform="translate(1000,36)">
+    <rect width="240" height="38" rx="12" fill="#141b24" stroke="#26313f"/>
+    <text x="30" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#e2b64b">USD</text>
+    <text x="110" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#7c8aa0">EUR</text>
+    <text x="180" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#7c8aa0">GBP</text>
+  </g>
+
+  <g transform="translate(40,110)">
+    <rect width="1200" height="46" rx="14" fill="#141b24" stroke="#26313f"/>
+    <rect x="8" y="8" width="180" height="30" rx="9" fill="#1b2430"/>
+    <text x="18" y="27" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#e2b64b">Portfolio</text>
+    <text x="220" y="27" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#7c8aa0">Accounts</text>
+    <text x="340" y="27" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#7c8aa0">Settings</text>
+  </g>
+
+  <g transform="translate(40,180)">
+    <rect width="1200" height="180" rx="18" fill="url(#hero)" stroke="#26313f"/>
+    <text x="28" y="40" font-family="Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#7c8aa0">TOTAL PORTFOLIO VALUE</text>
+    <text x="26" y="112" font-family="ui-monospace, Consolas, monospace" font-size="72" font-weight="600" fill="#e2b64b">$83,115.90</text>
+    <text x="28" y="146" font-family="Arial, sans-serif" font-size="13" fill="#7c8aa0">5 assets · updated 2:41:07 PM</text>
+  </g>
+  <defs>
+    <linearGradient id="hero" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141b24"/>
+      <stop offset="1" stop-color="#1b2430"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(40,384)">
+    <rect width="0" height="0" fill="none"/>
+    <rect x="0" y="0" width="130" height="36" rx="11" fill="#1b2430" stroke="#26313f"/>
+    <text x="16" y="23" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#e6edf5">↻ Update prices</text>
+    <circle cx="190" cy="18" r="7" fill="#4ec9a3"/>
+    <text x="208" y="23" font-family="ui-monospace, Consolas, monospace" font-size="12" fill="#4ec9a3">Live · every 30s</text>
+  </g>
+
+  <g transform="translate(40,444)">
+    <rect width="1200" height="300" rx="16" fill="#141b24" stroke="#26313f"/>
+    <g font-family="Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1" fill="#7c8aa0">
+      <text x="24" y="28">ASSET</text>
+      <text x="340" y="28" text-anchor="end">AMOUNT</text>
+      <text x="640" y="28" text-anchor="end">PRICE</text>
+      <text x="940" y="28" text-anchor="end">VALUE</text>
+    </g>
+    <rect x="0" y="40" width="1200" height="1" fill="#26313f"/>
+    <g font-family="ui-monospace, Consolas, monospace" font-size="15">
+      <g>
+        <rect x="22" y="58" width="28" height="28" rx="8" fill="#f7931a"/>
+        <text x="36" y="76" text-anchor="middle" font-size="10" font-weight="800" fill="#0d1117">BTC</text>
+        <text x="60" y="77" font-family="Arial, sans-serif" font-weight="700" fill="#e6edf5">Bitcoin</text>
+        <text x="60" y="94" font-family="Arial, sans-serif" font-size="11" fill="#7c8aa0">Coinbase</text>
+        <text x="340" y="77" text-anchor="end" fill="#e6edf5">0.8421</text>
+        <text x="640" y="77" text-anchor="end" fill="#7c8aa0">$62,410.00</text>
+        <text x="940" y="77" text-anchor="end" fill="#e2b64b" font-weight="600">$52,555.22</text>
+      </g>
+      <rect x="22" y="98" width="1156" height="1" fill="#1b2430"/>
+      <g>
+        <rect x="22" y="116" width="28" height="28" rx="8" fill="#8a92b2"/>
+        <text x="36" y="134" text-anchor="middle" font-size="10" font-weight="800" fill="#0d1117">ETH</text>
+        <text x="60" y="135" font-family="Arial, sans-serif" font-weight="700" fill="#e6edf5">Ethereum</text>
+        <text x="60" y="152" font-family="Arial, sans-serif" font-size="11" fill="#7c8aa0">Ledger</text>
+        <text x="340" y="135" text-anchor="end" fill="#e6edf5">4.5</text>
+        <text x="640" y="135" text-anchor="end" fill="#7c8aa0">$3,280.15</text>
+        <text x="940" y="135" text-anchor="end" fill="#e2b64b" font-weight="600">$14,760.68</text>
+      </g>
+      <rect x="22" y="156" width="1156" height="1" fill="#1b2430"/>
+      <g>
+        <rect x="22" y="174" width="28" height="28" rx="8" fill="#9945ff"/>
+        <text x="36" y="192" text-anchor="middle" font-size="10" font-weight="800" fill="#e6edf5">SOL</text>
+        <text x="60" y="193" font-family="Arial, sans-serif" font-weight="700" fill="#e6edf5">Solana</text>
+        <text x="60" y="210" font-family="Arial, sans-serif" font-size="11" fill="#7c8aa0">MetaMask</text>
+        <text x="340" y="193" text-anchor="end" fill="#e6edf5">25</text>
+        <text x="640" y="193" text-anchor="end" fill="#7c8aa0">$182.40</text>
+        <text x="940" y="193" text-anchor="end" fill="#e2b64b" font-weight="600">$4,560.00</text>
+      </g>
+      <rect x="22" y="214" width="1156" height="1" fill="#1b2430"/>
+      <g>
+        <rect x="22" y="232" width="28" height="28" rx="8" fill="#26a17b"/>
+        <text x="36" y="250" text-anchor="middle" font-size="10" font-weight="800" fill="#0d1117">USDT</text>
+        <text x="60" y="251" font-family="Arial, sans-serif" font-weight="700" fill="#e6edf5">Tether</text>
+        <text x="60" y="268" font-family="Arial, sans-serif" font-size="11" fill="#7c8aa0">Coinbase</text>
+        <text x="340" y="251" text-anchor="end" fill="#e6edf5">5,000</text>
+        <text x="640" y="251" text-anchor="end" fill="#7c8aa0">$1.00</text>
+        <text x="940" y="251" text-anchor="end" fill="#e2b64b" font-weight="600">$5,000.00</text>
+      </g>
+      <rect x="22" y="272" width="1156" height="1" fill="#1b2430"/>
+      <g>
+        <rect x="22" y="290" width="28" height="28" rx="8" fill="#25a768"/>
+        <text x="36" y="308" text-anchor="middle" font-size="10" font-weight="800" fill="#0d1117">XRP</text>
+        <text x="60" y="309" font-family="Arial, sans-serif" font-weight="700" fill="#e6edf5">Ripple</text>
+        <text x="60" y="326" font-family="Arial, sans-serif" font-size="11" fill="#7c8aa0">Ledger</text>
+        <text x="340" y="309" text-anchor="end" fill="#e6edf5">12,000</text>
+        <text x="640" y="309" text-anchor="end" fill="#7c8aa0">$0.52</text>
+        <text x="940" y="309" text-anchor="end" fill="#e2b64b" font-weight="600">$6,240.00</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(40,768)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7c8aa0">Balances entered manually · live prices via <tspan fill="#8a7233">coingecko.com</tspan> · autosaves to your NAS through the storage bridge, shared by every browser on your network.</text>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+  <rect width="1280" height="800" fill="#E7EAE0"/>
+  <rect x="0" y="0" width="236" height="800" fill="#DDE1D5"/>
+  <rect x="12" y="24" width="212" height="60" rx="10" fill="#F5F7F0"/>
+  <text x="118" y="54" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#1E3328">Homestead Ledger</text>
+  <rect x="16" y="100" width="204" height="34" rx="8" fill="#1E3328"/>
+  <text x="30" y="122" font-family="Arial, sans-serif" font-size="15" fill="#F5F7F0">Plots &amp; Garden</text>
+  <rect x="16" y="142" width="204" height="34" rx="8" fill="#F5F7F0"/>
+  <text x="30" y="164" font-family="Arial, sans-serif" font-size="15" fill="#516257">Crops</text>
+  <rect x="16" y="184" width="204" height="34" rx="8" fill="#F5F7F0"/>
+  <text x="30" y="206" font-family="Arial, sans-serif" font-size="15" fill="#516257">Harvests</text>
+  <rect x="16" y="226" width="204" height="34" rx="8" fill="#F5F7F0"/>
+  <text x="30" y="248" font-family="Arial, sans-serif" font-size="15" fill="#516257">Stores &amp; Preserves</text>
+  <rect x="16" y="268" width="204" height="34" rx="8" fill="#F5F7F0"/>
+  <text x="30" y="290" font-family="Arial, sans-serif" font-size="15" fill="#516257">Supplies</text>
+  <rect x="16" y="310" width="204" height="34" rx="8" fill="#F5F7F0"/>
+  <text x="30" y="332" font-family="Arial, sans-serif" font-size="15" fill="#516257">Tasks</text>
+  <rect x="16" y="352" width="204" height="34" rx="8" fill="#F5F7F0"/>
+  <text x="30" y="374" font-family="Arial, sans-serif" font-size="15" fill="#516257">Journal</text>
+  <rect x="252" y="24" width="496" height="44" rx="10" fill="#F5F7F0"/>
+  <text x="270" y="52" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#1E3328">Crops — 2026 Season</text>
+  <rect x="252" y="84" width="496" height="120" rx="12" fill="#F5F7F0"/>
+  <rect x="268" y="102" width="320" height="10" rx="5" fill="#D6E3E0"/>
+  <text x="268" y="150" font-family="Arial, sans-serif" font-size="15" fill="#516257">Tomatoes — 3 beds · growing · 26 plants</text>
+  <text x="268" y="176" font-family="Arial, sans-serif" font-size="15" fill="#516257">Potatoes — 1 bed · dormant</text>
+  <rect x="252" y="220" width="496" height="120" rx="12" fill="#F5F7F0"/>
+  <rect x="268" y="238" width="180" height="10" rx="5" fill="#F0E2BE"/>
+  <text x="268" y="286" font-family="Arial, sans-serif" font-size="15" fill="#516257">Garlic — 2 beds · growing</text>
+  <text x="268" y="312" font-family="Arial, sans-serif" font-size="15" fill="#516257">Squash — 1 bed · harvested 42 lb</text>
+  <rect x="764" y="24" width="500" height="316" rx="12" fill="#F5F7F0"/>
+  <rect x="780" y="42" width="180" height="10" rx="5" fill="#DBE7D6"/>
+  <text x="780" y="82" font-family="Arial, sans-serif" font-size="15" fill="#1E3328">This year</text>
+  <text x="780" y="112" font-family="Arial, sans-serif" font-size="15" fill="#516257">Harvests logged — 47</text>
+  <text x="780" y="140" font-family="Arial, sans-serif" font-size="15" fill="#516257">Total harvest — 312.5 lb</text>
+  <text x="780" y="168" font-family="Arial, sans-serif" font-size="15" fill="#516257">Jars preserved — 36</text>
+  <text x="780" y="196" font-family="Arial, sans-serif" font-size="15" fill="#516257">Tasks done — 118</text>
+  <text x="780" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#1E3328">Harvest this week</text>
+  <text x="780" y="280" font-family="Arial, sans-serif" font-size="15" fill="#516257">Zucchini — 3.2 lb · 2 days ago</text>
+  <text x="780" y="308" font-family="Arial, sans-serif" font-size="15" fill="#516257">Tomatoes — 5.1 lb · today</text>
+</svg>

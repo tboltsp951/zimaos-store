@@ -1,0 +1,35 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "author": "tbolt",
+  "category": "Productivity",
+  "description": "A lean, local-first vehicle service log. Track every vehicle's maintenance and repairs, keep service intervals honest with due-date and mileage reminders, log registrations and inspections, and watch what the car really costs per mile. Data lives on your NAS.",
+  "developer": "tbolt",
+  "screenshot_link": [
+    "/apps/org.tbolt.garagelog/assets/screenshot.svg"
+  ],
+  "tagline": "Your service records, self-hosted",
+  "thumbnail": "/apps/org.tbolt.garagelog/assets/thumbnail.svg",
+  "tips": {
+    "before_install": "## Garage Log\n\nData (vehicles, maintenance and repair logs, reminders, registrations) is stored on your ZimaOS disk at `/DATA/AppData/garage-log/`, so it survives container rebuilds and is shared across every browser on your network.\n"
+  },
+  "update_at": "2026-08-13",
+  "website": "https://github.com/tboltsp951/zimaos-garage-log",
+  "repo": "https://github.com/tboltsp951/zimaos-garage-log",
+  "support": "https://github.com/tboltsp951/zimaos-garage-log/issues",
+  "title": "Garage Log",
+  "release_note": "- Initial release: self-hosted vehicle service records with on-NAS storage.",
+  "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
+  "id": "org.tbolt.garagelog",
+  "version": "1.0.0",
+  "categories": [
+    "productivity"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 48379594,
+    "arm64": 49039136
+  }
+}

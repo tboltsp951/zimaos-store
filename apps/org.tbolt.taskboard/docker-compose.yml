@@ -1,0 +1,28 @@
+name: task-board
+
+services:
+  task-board:
+    image: ghcr.io/tboltsp951/zimaos-taskboard:latest
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8189"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    container_name: task-board
+x-casaos:
+  id: org.tbolt.taskboard
+  main: task-board
+  icon: https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages/apps/org.tbolt.taskboard/assets/icon.svg
+  title:
+    en_US: Task Board
+  index: /
+  port_map: "8189"
+  version: "1.0.0"
