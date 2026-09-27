@@ -56,11 +56,13 @@ x-casaos:
     en_US: Furrow
   index: /
   port_map: "8191"
-  version: "1.0.0"
-  update_at: "2026-08-11"
+  version: "1.1.0"
+  update_at: "2026-09-27"
   release_notes:
     en_US: |-
-      - Initial release: self-hosted garden planner with on-NAS storage.
+      - Revamped plant library: grouped, searchable list with detail cards.
+      - Add, edit, and delete your own plants; richer grow metadata (spacing, start indoors, sow-after-frost, tender).
+      - Tighter My Garden integration with per-plant add/remove.
   website: "https://github.com/tboltsp951/zimaos-furrow"
   repo: "https://github.com/tboltsp951/zimaos-furrow"
   support: "https://github.com/tboltsp951/zimaos-furrow/issues"
