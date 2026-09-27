@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-09-06T20:19:21Z",
+  "updated_at": "2026-09-27T16:12:15Z",
   "app_count": 8,
   "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
   "apps": [
@@ -85,8 +85,8 @@
       "thumbnail": "/apps/org.tbolt.furrow/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.furrow/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.furrow/meta.json",
-      "content_hash": "d83d4d97",
-      "version": "1.0.0"
+      "content_hash": "dbf8300e",
+      "version": "1.1.0"
     },
     {
       "id": "org.tbolt.garagelog",

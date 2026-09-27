@@ -2,7 +2,7 @@ name: furrow
 
 services:
   furrow:
-    image: ghcr.io/tboltsp951/zimaos-furrow:latest@sha256:6f2bf7668899f9a97a69dd0e4d11373bffc1717d8231bb43b9131126e76b9f44
+    image: ghcr.io/tboltsp951/zimaos-furrow:latest@sha256:94c7ef8d4c1400959f3eb57b030edc3123c21a503f1e0babbaf58ad72ca8137d
     network_mode: bridge
     ports:
       - target: 8080
@@ -25,4 +25,4 @@ x-casaos:
     en_US: Furrow
   index: /
   port_map: "8191"
-  version: "1.0.0"
+  version: "1.1.0"
