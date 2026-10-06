@@ -3,6 +3,7 @@ name: homestead-ledger
 services:
   homestead-ledger:
     image: ghcr.io/tboltsp951/zimaos-homestead-ledger:latest@sha256:a7cc25f0102d7cd221e2ce20b63649c6df9750c67332f1803a549263b73bf591
+    pull_policy: always
     network_mode: bridge
     ports:
       - target: 8080

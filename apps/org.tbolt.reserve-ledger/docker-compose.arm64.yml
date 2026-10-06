@@ -3,6 +3,7 @@ name: reserve-ledger
 services:
   reserve-ledger:
     image: ghcr.io/tboltsp951/zimaos-reserve-ledger:latest@sha256:3b72114e09930533b7b74dd1657cd3e4e15204992368866af851c72f61f6cb03
+    pull_policy: always
     network_mode: bridge
     ports:
       - target: 8080

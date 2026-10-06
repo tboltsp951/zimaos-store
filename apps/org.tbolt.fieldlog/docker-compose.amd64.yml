@@ -3,6 +3,7 @@ name: field-log
 services:
   field-log:
     image: ghcr.io/tboltsp951/zimaos-field-log:latest@sha256:688eff2f093f6bf1deb4cc7b702379b5041eb597aa0cd4cd6326db1a4bfc851a
+    pull_policy: always
     network_mode: bridge
     ports:
       - target: 8080

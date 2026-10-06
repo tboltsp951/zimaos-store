@@ -3,6 +3,7 @@ name: garage-log
 services:
   garage-log:
     image: ghcr.io/tboltsp951/zimaos-garage-log:latest
+    pull_policy: always
     network_mode: bridge
     ports:
       - target: 8080

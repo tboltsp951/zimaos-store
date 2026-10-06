@@ -3,6 +3,7 @@ name: task-board
 services:
   task-board:
     image: ghcr.io/tboltsp951/zimaos-taskboard:latest
+    pull_policy: always
     network_mode: bridge
     ports:
       - target: 8080

@@ -3,6 +3,7 @@ name: furrow
 services:
   furrow:
     image: ghcr.io/tboltsp951/zimaos-furrow:latest@sha256:94c7ef8d4c1400959f3eb57b030edc3123c21a503f1e0babbaf58ad72ca8137d
+    pull_policy: always
     network_mode: bridge
     ports:
       - target: 8080
