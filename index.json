@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-09-27T16:12:15Z",
+  "updated_at": "2026-10-06T16:10:28Z",
   "app_count": 8,
   "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
   "apps": [
@@ -43,8 +43,8 @@
       "thumbnail": "/apps/org.tbolt.coldvault/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.coldvault/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.coldvault/meta.json",
-      "content_hash": "8f4d78d4",
-      "version": "1.0.0"
+      "content_hash": "7af98801",
+      "version": "1.1.0"
     },
     {
       "id": "org.tbolt.fieldlog",

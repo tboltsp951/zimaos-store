@@ -15,21 +15,21 @@
   "tips": {
     "before_install": "## Cold Vault\n\nData (coin holdings, wallet locations, portfolio, AI-free server-side autosave) is stored on your ZimaOS disk at `/DATA/AppData/cold-vault/`, so it survives container rebuilds and is shared across every browser on your network.\n"
   },
-  "update_at": "2026-09-06",
+  "update_at": "2026-10-06",
   "website": "https://github.com/tboltsp951/zimaos-crypto-vault",
   "repo": "https://github.com/tboltsp951/zimaos-crypto-vault",
   "support": "https://github.com/tboltsp951/zimaos-crypto-vault/issues",
   "title": "Cold Vault",
-  "release_note": "- Initial release: self-hosted crypto cold-vault portfolio.",
+  "release_note": "- New Tracked coins manager in Settings: search CoinGecko by name or symbol, or add by CoinGecko ID, and any coin you hold gets its ID, name and logo picked up automatically for live pricing.\n- Remove coins you don't track; coins still used by a holding are protected.\n- Custom coins are saved with your data and included in export/import.",
   "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
   "id": "org.tbolt.coldvault",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "categories": [
     "finance"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 48374379,
-    "arm64": 49033921
+    "amd64": 48376687,
+    "arm64": 49036229
   }
 }

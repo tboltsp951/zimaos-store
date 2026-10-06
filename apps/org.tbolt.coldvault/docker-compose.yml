@@ -3,6 +3,7 @@ name: cold-vault
 services:
   cold-vault:
     image: ghcr.io/tboltsp951/zimaos-crypto-vault:latest
+    pull_policy: always
     network_mode: bridge
     ports:
       - target: 8080
@@ -25,4 +26,4 @@ x-casaos:
     en_US: Cold Vault
   index: /
   port_map: "8193"
-  version: "1.0.0"
+  version: "1.1.0"
