@@ -3,6 +3,7 @@ name: armory
 services:
   armory:
     image: ghcr.io/tboltsp951/zimaos-armory:latest
+    pull_policy: always
     network_mode: bridge
     ports:
       - target: 8080
