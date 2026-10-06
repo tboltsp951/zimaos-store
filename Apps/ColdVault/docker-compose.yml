@@ -3,6 +3,7 @@ name: cold-vault
 services:
   cold-vault:
     image: ghcr.io/tboltsp951/zimaos-crypto-vault:latest
+    pull_policy: always
     network_mode: bridge
     ports:
       - target: 8080
@@ -56,11 +57,13 @@ x-casaos:
     en_US: Cold Vault
   index: /
   port_map: "8193"
-  version: "1.0.0"
-  update_at: "2026-09-06"
+  version: "1.1.0"
+  update_at: "2026-10-06"
   release_notes:
     en_US: |-
-      - Initial release: self-hosted crypto cold-vault portfolio.
+      - New Tracked coins manager in Settings: search CoinGecko by name or symbol, or add by CoinGecko ID, and any coin you hold gets its ID, name and logo picked up automatically for live pricing.
+      - Remove coins you don't track; coins still used by a holding are protected.
+      - Custom coins are saved with your data and included in export/import.
   website: "https://github.com/tboltsp951/zimaos-crypto-vault"
   repo: "https://github.com/tboltsp951/zimaos-crypto-vault"
   support: "https://github.com/tboltsp951/zimaos-crypto-vault/issues"
