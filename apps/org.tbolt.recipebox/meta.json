@@ -4,7 +4,7 @@
     "arm64"
   ],
   "author": "tbolt",
-  "category": "Home",
+  "category": "Productivity",
   "description": "A local-first recipe box. Import recipes from websites, handwritten cards, PDFs or pasted text with OpenRouter AI, then plan meals, build shopping lists, cook step by step, and keep encrypted backups.\n\nRecipes live in your browser first; the bundled sync server keeps a copy on this disk with the last 20 versions, so a bad merge can be undone. Add an API key in Settings to enable AI import. Nothing leaves your network unless you configure sync or ask the AI to read a page.\n",
   "developer": "tbolt",
   "screenshot_link": [
@@ -26,7 +26,7 @@
   "id": "org.tbolt.recipebox",
   "version": "1.0.0",
   "categories": [
-    "home"
+    "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {

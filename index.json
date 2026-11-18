@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-11-18T01:38:09Z",
+  "updated_at": "2026-11-18T10:30:05Z",
   "app_count": 9,
   "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
   "apps": [
@@ -134,9 +134,9 @@
       "id": "org.tbolt.recipebox",
       "title": "Recipe Box",
       "tagline": "Your recipe box, self-hosted",
-      "category": "Home",
+      "category": "Productivity",
       "categories": [
-        "home"
+        "productivity"
       ],
       "author": "tbolt",
       "developer": "tbolt",
@@ -148,7 +148,7 @@
       "thumbnail": "/apps/org.tbolt.recipebox/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.recipebox/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.recipebox/meta.json",
-      "content_hash": "92df2c5c",
+      "content_hash": "91aae17f",
       "version": "1.0.0"
     },
     {
