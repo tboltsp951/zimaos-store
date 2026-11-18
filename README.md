@@ -23,7 +23,7 @@ Behind the scenes ZimaOS calls `POST /v3/app_store/repo {"url":"..."}`. Updates 
 | Garage Log | 8194 | Vehicle maintenance & repair log, reminders, per-mile cost | Productivity |
 | Field Log | 8195 | Harvests, catches, sits, freezer inventory, gear | Productivity |
 | Armory | 8196 | Firearms & ammunition inventory, cleaning intervals, reloading | Productivity |
-| Recipe Box | 8197 | Recipe collection: AI import, meal planner, shopping lists | Home |
+| Recipe Box | 8197 | Recipe collection: AI import, meal planner, shopping lists | Productivity |
 |---|---|---|---|
 
 ## Adding or updating an app

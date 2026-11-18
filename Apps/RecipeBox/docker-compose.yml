@@ -37,7 +37,7 @@ x-casaos:
     - arm64
   main: recipe-box
   author: tbolt
-  category: Home
+  category: Productivity
   description:
     en_US: |
       A local-first recipe box. Import recipes from websites, handwritten cards, PDFs or pasted text with OpenRouter AI, then plan meals, build shopping lists, cook step by step, and keep encrypted backups.
