@@ -1,0 +1,75 @@
+# Recipe Box for ZimaOS / CasaOS.
+name: recipe-box
+
+services:
+  recipe-box:
+    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.0
+    pull_policy: always
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8197"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+      RECIPEBOX_TOKEN: ""
+    container_name: recipe-box
+    x-casaos:
+      ports:
+        - container: "8080"
+          description:
+            en_US: "Recipe Box web UI"
+      volumes:
+        - container: /data
+          description:
+            en_US: "Recipe Box data (recipes, sync payload, version history)"
+
+x-casaos:
+  id: org.tbolt.recipebox
+  architectures:
+    - amd64
+    - arm64
+  main: recipe-box
+  author: tbolt
+  category: Home
+  description:
+    en_US: |
+      A local-first recipe box. Import recipes from websites, handwritten cards, PDFs or pasted text with OpenRouter AI, then plan meals, build shopping lists, cook step by step, and keep encrypted backups.
+
+      Recipes live in your browser first; the bundled sync server keeps a copy on this disk with the last 20 versions, so a bad merge can be undone. Add an API key in Settings to enable AI import. Nothing leaves your network unless you configure sync or ask the AI to read a page.
+  developer: tbolt
+  icon: "icon.svg"
+  screenshot_link:
+    - "screenshot-1.png"
+    - "screenshot-2.png"
+  tagline:
+    en_US: Your recipe box, self-hosted
+  thumbnail: "thumbnail.svg"
+  tips:
+    before_install:
+      en_US: |
+        ## Recipe Box
+
+        Data (recipes, shopping lists, sync history) is stored on your ZimaOS disk at `/DATA/AppData/$AppID/`, so it survives container rebuilds.
+
+        Open **Settings** in the app to add an OpenRouter API key if you want AI import from websites, photos, PDFs or pasted text. Without a key everything else still works: manual recipes, meal planning, shopping lists, and local backups.
+
+        If this instance is reachable from other devices, set `RECIPEBOX_TOKEN` in the app's Sync dialog so the server requires a bearer token.
+  title:
+    en_US: Recipe Box
+  index: /
+  port_map: "8197"
+  version: "1.0.0"
+  update_at: "2026-11-17"
+  release_notes:
+    en_US: |-
+      - Initial release: PWA plus single-port sync API, with on-disk storage.
+  website: "https://github.com/tboltsp951/zimaos-recipe-box"
+  repo: "https://github.com/tboltsp951/zimaos-recipe-box"
+  support: "https://github.com/tboltsp951/zimaos-recipe-box/issues"

@@ -15,15 +15,16 @@ Behind the scenes ZimaOS calls `POST /v3/app_store/repo {"url":"..."}`. Updates 
 ## Apps
 
 | App | Port | What it does | Category |
-|---|---|---|---|
-| Armory | 8196 | Firearms & ammunition inventory, cleaning intervals, reloading | Productivity |
-| Field Log | 8195 | Harvests, catches, sits, freezer inventory, gear | Productivity |
-| Furrow | 8191 | Garden planner: beds, spacing, frost dates, harvest log | Productivity |
-| Garage Log | 8194 | Vehicle maintenance & repair log, reminders, per-mile cost | Productivity |
-| Homestead Ledger | 8190 | Crops, harvests, preserves & inventory, task board, journal | Productivity |
-| Reserve Ledger | 8192 | Bullion ledger: holdings, metals, spot price feeds | Finance |
 | Task Board | 8189 | Tasks with quick-add syntax, people, weekly digest | Productivity |
+| Homestead Ledger | 8190 | Crops, harvests, preserves & inventory, task board, journal | Productivity |
+| Furrow | 8191 | Garden planner: beds, spacing, frost dates, harvest log | Productivity |
+| Reserve Ledger | 8192 | Bullion ledger: holdings, metals, spot price feeds | Finance |
 | Cold Vault | 8193 | Crypto portfolio across exchanges & cold wallets | Finance |
+| Garage Log | 8194 | Vehicle maintenance & repair log, reminders, per-mile cost | Productivity |
+| Field Log | 8195 | Harvests, catches, sits, freezer inventory, gear | Productivity |
+| Armory | 8196 | Firearms & ammunition inventory, cleaning intervals, reloading | Productivity |
+| Recipe Box | 8197 | Recipe collection: AI import, meal planner, shopping lists | Home |
+|---|---|---|---|
 
 ## Adding or updating an app
 
