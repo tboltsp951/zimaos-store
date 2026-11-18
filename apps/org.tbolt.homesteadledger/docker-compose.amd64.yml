@@ -21,7 +21,7 @@ services:
 x-casaos:
   id: org.tbolt.homesteadledger
   main: homestead-ledger
-  icon: https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages/apps/org.tbolt.homesteadledger/assets/icon.svg
+  icon: https://tboltsp951.github.io/zimaos-store/apps/org.tbolt.homesteadledger/assets/icon.svg
   title:
     en_US: Homestead Ledger
   index: /

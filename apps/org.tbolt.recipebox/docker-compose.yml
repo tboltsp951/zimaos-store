@@ -23,7 +23,7 @@ services:
 x-casaos:
   id: org.tbolt.recipebox
   main: recipe-box
-  icon: https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages/apps/org.tbolt.recipebox/assets/icon.svg
+  icon: https://tboltsp951.github.io/zimaos-store/apps/org.tbolt.recipebox/assets/icon.svg
   title:
     en_US: Recipe Box
   index: /

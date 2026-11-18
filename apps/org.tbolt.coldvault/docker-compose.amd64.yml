@@ -21,7 +21,7 @@ services:
 x-casaos:
   id: org.tbolt.coldvault
   main: cold-vault
-  icon: https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages/apps/org.tbolt.coldvault/assets/icon.svg
+  icon: https://tboltsp951.github.io/zimaos-store/apps/org.tbolt.coldvault/assets/icon.svg
   title:
     en_US: Cold Vault
   index: /

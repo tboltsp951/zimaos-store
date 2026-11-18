@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "updated_at": "2026-11-18T10:52:30Z",
+  "updated_at": "2026-11-18T11:00:52Z",
   "app_count": 9,
-  "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
+  "base_url": "https://tboltsp951.github.io/zimaos-store",
   "apps": [
     {
       "id": "org.tbolt.armory",
@@ -22,7 +22,7 @@
       "thumbnail": "/apps/org.tbolt.armory/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.armory/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.armory/meta.json",
-      "content_hash": "b0aa2359",
+      "content_hash": "fcf84c46",
       "version": "1.0.0"
     },
     {
@@ -43,7 +43,7 @@
       "thumbnail": "/apps/org.tbolt.coldvault/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.coldvault/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.coldvault/meta.json",
-      "content_hash": "363dd598",
+      "content_hash": "fe1cdab4",
       "version": "1.1.0"
     },
     {
@@ -64,7 +64,7 @@
       "thumbnail": "/apps/org.tbolt.fieldlog/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.fieldlog/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.fieldlog/meta.json",
-      "content_hash": "c779d9d4",
+      "content_hash": "a5c52c4e",
       "version": "1.0.0"
     },
     {
@@ -85,7 +85,7 @@
       "thumbnail": "/apps/org.tbolt.furrow/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.furrow/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.furrow/meta.json",
-      "content_hash": "003c5c8b",
+      "content_hash": "5b32167c",
       "version": "1.1.0"
     },
     {
@@ -106,7 +106,7 @@
       "thumbnail": "/apps/org.tbolt.garagelog/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.garagelog/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.garagelog/meta.json",
-      "content_hash": "bd528c5d",
+      "content_hash": "3ba09306",
       "version": "1.0.0"
     },
     {
@@ -127,7 +127,7 @@
       "thumbnail": "/apps/org.tbolt.homesteadledger/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.homesteadledger/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.homesteadledger/meta.json",
-      "content_hash": "9d26d74d",
+      "content_hash": "8f6123ed",
       "version": "1.0.0"
     },
     {
@@ -148,7 +148,7 @@
       "thumbnail": "/apps/org.tbolt.recipebox/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.recipebox/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.recipebox/meta.json",
-      "content_hash": "a6be17cf",
+      "content_hash": "21d844ee",
       "version": "1.0.1"
     },
     {
@@ -169,7 +169,7 @@
       "thumbnail": "/apps/org.tbolt.reserve-ledger/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.reserve-ledger/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.reserve-ledger/meta.json",
-      "content_hash": "e18d5e06",
+      "content_hash": "2f085d2f",
       "version": "1.0.0"
     },
     {
@@ -190,7 +190,7 @@
       "thumbnail": "/apps/org.tbolt.taskboard/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.taskboard/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.taskboard/meta.json",
-      "content_hash": "2b169087",
+      "content_hash": "552df46e",
       "version": "1.0.0"
     }
   ]

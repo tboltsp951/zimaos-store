@@ -21,7 +21,7 @@
   "support": "https://github.com/tboltsp951/zimaos-homestead-ledger/issues",
   "title": "Homestead Ledger",
   "release_note": "- Initial release: self-hosted homestead ledger with on-NAS storage.",
-  "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
+  "base_url": "https://tboltsp951.github.io/zimaos-store",
   "id": "org.tbolt.homesteadledger",
   "version": "1.0.0",
   "categories": [
