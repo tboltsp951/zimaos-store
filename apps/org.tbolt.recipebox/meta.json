@@ -16,21 +16,21 @@
   "tips": {
     "before_install": "## Recipe Box\n\nData (recipes, shopping lists, sync history) is stored on your ZimaOS disk at `/DATA/AppData/$AppID/`, so it survives container rebuilds.\n\nOpen **Settings** in the app to add an OpenRouter API key if you want AI import from websites, photos, PDFs or pasted text. Without a key everything else still works: manual recipes, meal planning, shopping lists, and local backups.\n\nIf this instance is reachable from other devices, set `RECIPEBOX_TOKEN` in the app's Sync dialog so the server requires a bearer token.\n"
   },
-  "update_at": "2026-11-17",
+  "update_at": "2026-11-18",
   "website": "https://github.com/tboltsp951/zimaos-recipe-box",
   "repo": "https://github.com/tboltsp951/zimaos-recipe-box",
   "support": "https://github.com/tboltsp951/zimaos-recipe-box/issues",
   "title": "Recipe Box",
-  "release_note": "- Initial release: PWA plus single-port sync API, with on-disk storage.",
+  "release_note": "- Camera capture now works over plain http on a LAN address. The browser\n  hides camera APIs outside https/localhost, so the app opens the device\n  camera app instead of refusing to continue; photos still go through the\n  same AI import. Live preview, torch, grid and timer still need https or\n  localhost.",
   "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
   "id": "org.tbolt.recipebox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 48491234,
-    "arm64": 49150776
+    "amd64": 48492282,
+    "arm64": 49151819
   }
 }

@@ -3,7 +3,7 @@ name: recipe-box
 
 services:
   recipe-box:
-    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.0@sha256:3d62962092d26e9cb1fe21e405ec6f6e15d856e13086c6778c5f4bd92f92476e
+    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.1@sha256:83d056c2217e48f676770f41e75119ceafd5dd6c7ec5a8ce07fad22bf39d42be
     pull_policy: always
     network_mode: bridge
     ports:
@@ -28,4 +28,4 @@ x-casaos:
     en_US: Recipe Box
   index: /
   port_map: "8197"
-  version: "1.0.0"
+  version: "1.0.1"
