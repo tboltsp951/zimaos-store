@@ -25,7 +25,12 @@ jobs:
         with:
           source: .
           output: dist
-          base-url: https://cdn.jsdelivr.net/gh/${{ github.repository }}@gh-pages
+          # Serve app files straight from GitHub Pages. jsDelivr caches a branch
+          # ref for up to a week, and purging it races the Pages deploy, so it
+          # repeatedly served a stale meta.json and hid apps from the store.
+          # Pages sends Access-Control-Allow-Origin: * with a 10-minute TTL, so
+          # updates appear on their own with no purge step.
+          base-url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           cache-file: .cache/build_appstore/image-size-cache.json
           digest-cache-file: .cache/build_appstore/image-digest-cache.json
           report-json: out/build-v2-report.json
@@ -56,67 +61,32 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./dist
 
-      - name: Refresh jsDelivr cache
+      - name: Verify the published store
         run: |
-          # jsDelivr caches a branch ref for up to a week, so every published
-          # file must be purged - not just index.json. Purging only the index
-          # left each app's meta.json stale, so an app could advertise a
-          # category that no longer exists and vanish from the store.
-          #
-          # A purge also races the deploy: jsDelivr re-fetches from GitHub
-          # Pages, so purging before Pages serves the new build simply caches
-          # the previous one. Wait for Pages to catch up, purge, then compare
-          # the CDN against dist/ and purge again if it is still behind.
+          # App files now come from Pages, so there is nothing to purge there.
+          # This only waits for the deploy to appear and refreshes the jsDelivr
+          # copy of index.json for clients still pointed at it (its base_url now
+          # sends them to Pages for everything else).
           set -euo pipefail
           repo="${{ github.repository }}"
           pages="https://${{ github.repository_owner }}.github.io/${GITHUB_REPOSITORY#*/}"
-          cdn="https://cdn.jsdelivr.net/gh/${repo}@gh-pages"
 
-          purge() {
-            curl -fsSL --retry 3 --retry-delay 2 --max-time 20 \
-              "https://purge.jsdelivr.net/gh/${repo}@gh-pages/$1" >/dev/null 2>&1 || true
-          }
-          purge_all() {
-            count=0
-            while IFS= read -r f; do
-              rel="${f#dist/}"
-              [ "$rel" = ".nojekyll" ] && continue
-              purge "$rel"
-              count=$((count + 1))
-            done < <(find dist -type f | sort)
-            echo "Purged ${count} file(s) from jsDelivr."
-          }
-
-          for i in $(seq 1 24); do
+          for i in $(seq 1 60); do
             if curl -fsSL --max-time 20 "$pages/index.json" | cmp -s - dist/index.json; then
               echo "GitHub Pages is serving the new index."
               break
             fi
-            if [ "$i" = "24" ]; then
-              echo "::warning::Pages still serving an older index; purging anyway."
+            if [ "$i" = "60" ]; then
+              echo "::warning::Pages has not picked up the new index yet; it will within 10 minutes."
             fi
             sleep 5
           done
 
-          purge_all
-
-          stale_check() {
-            curl -fsSL --max-time 20 "$cdn/index.json" 2>/dev/null | cmp -s - dist/index.json || return 1
-            for meta in dist/apps/*/meta.json; do
-              [ -e "$meta" ] || continue
-              rel="apps/$(basename "$(dirname "$meta")")/meta.json"
-              curl -fsSL --max-time 20 "$cdn/$rel" 2>/dev/null | cmp -s - "$meta" || return 1
-            done
-            return 0
-          }
-
-          for attempt in 1 2 3 4 5 6; do
-            if stale_check; then
-              echo "CDN matches the new build."
-              exit 0
-            fi
-            echo "CDN still serving an older file (attempt ${attempt}); purging again."
-            purge_all
-            sleep 10
+          for f in index.json store.json; do
+            curl -fsSL --retry 3 --retry-delay 2 --max-time 20 \
+              "https://purge.jsdelivr.net/gh/${repo}@gh-pages/$f" >/dev/null 2>&1 || true
           done
-          echo "::warning::jsDelivr is still serving older files; it will catch up shortly."
+          echo "Refreshed the jsDelivr index copy."
+
+          base=$(curl -fsSL --max-time 20 "$pages/index.json" | grep -o '"base_url"[^,}]*' | head -1 || true)
+          echo "base_url: ${base}"
