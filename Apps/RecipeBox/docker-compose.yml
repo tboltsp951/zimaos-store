@@ -3,7 +3,7 @@ name: recipe-box
 
 services:
   recipe-box:
-    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.0
+    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.1
     pull_policy: always
     network_mode: bridge
     ports:
@@ -65,11 +65,15 @@ x-casaos:
     en_US: Recipe Box
   index: /
   port_map: "8197"
-  version: "1.0.0"
-  update_at: "2026-11-17"
+  version: "1.0.1"
+  update_at: "2026-11-18"
   release_notes:
     en_US: |-
-      - Initial release: PWA plus single-port sync API, with on-disk storage.
+      - Camera capture now works over plain http on a LAN address. The browser
+        hides camera APIs outside https/localhost, so the app opens the device
+        camera app instead of refusing to continue; photos still go through the
+        same AI import. Live preview, torch, grid and timer still need https or
+        localhost.
   website: "https://github.com/tboltsp951/zimaos-recipe-box"
   repo: "https://github.com/tboltsp951/zimaos-recipe-box"
   support: "https://github.com/tboltsp951/zimaos-recipe-box/issues"
