@@ -1,0 +1,36 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "author": "tbolt",
+  "category": "Home",
+  "description": "A local-first recipe box. Import recipes from websites, handwritten cards, PDFs or pasted text with OpenRouter AI, then plan meals, build shopping lists, cook step by step, and keep encrypted backups.\n\nRecipes live in your browser first; the bundled sync server keeps a copy on this disk with the last 20 versions, so a bad merge can be undone. Add an API key in Settings to enable AI import. Nothing leaves your network unless you configure sync or ask the AI to read a page.\n",
+  "developer": "tbolt",
+  "screenshot_link": [
+    "/apps/org.tbolt.recipebox/assets/screenshot-1.webp",
+    "/apps/org.tbolt.recipebox/assets/screenshot-2.webp"
+  ],
+  "tagline": "Your recipe box, self-hosted",
+  "thumbnail": "/apps/org.tbolt.recipebox/assets/thumbnail.svg",
+  "tips": {
+    "before_install": "## Recipe Box\n\nData (recipes, shopping lists, sync history) is stored on your ZimaOS disk at `/DATA/AppData/$AppID/`, so it survives container rebuilds.\n\nOpen **Settings** in the app to add an OpenRouter API key if you want AI import from websites, photos, PDFs or pasted text. Without a key everything else still works: manual recipes, meal planning, shopping lists, and local backups.\n\nIf this instance is reachable from other devices, set `RECIPEBOX_TOKEN` in the app's Sync dialog so the server requires a bearer token.\n"
+  },
+  "update_at": "2026-11-17",
+  "website": "https://github.com/tboltsp951/zimaos-recipe-box",
+  "repo": "https://github.com/tboltsp951/zimaos-recipe-box",
+  "support": "https://github.com/tboltsp951/zimaos-recipe-box/issues",
+  "title": "Recipe Box",
+  "release_note": "- Initial release: PWA plus single-port sync API, with on-disk storage.",
+  "base_url": "https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages",
+  "id": "org.tbolt.recipebox",
+  "version": "1.0.0",
+  "categories": [
+    "home"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 48491230,
+    "arm64": 49150772
+  }
+}

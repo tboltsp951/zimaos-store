@@ -1,0 +1,31 @@
+# Recipe Box for ZimaOS / CasaOS.
+name: recipe-box
+
+services:
+  recipe-box:
+    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.0
+    pull_policy: always
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: "8197"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID
+        target: /data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+      RECIPEBOX_TOKEN: ""
+    container_name: recipe-box
+x-casaos:
+  id: org.tbolt.recipebox
+  main: recipe-box
+  icon: https://cdn.jsdelivr.net/gh/tboltsp951/zimaos-store@gh-pages/apps/org.tbolt.recipebox/assets/icon.svg
+  title:
+    en_US: Recipe Box
+  index: /
+  port_map: "8197"
+  version: "1.0.0"

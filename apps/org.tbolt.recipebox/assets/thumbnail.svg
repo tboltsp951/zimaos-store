@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <rect width="640" height="360" fill="#f2f5f3"/>
+  <rect x="0" y="0" width="640" height="62" fill="#0f6b6b"/>
+  <text x="24" y="40" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Recipe Box</text>
+  <g fill="#ffffff" opacity="0.85">
+    <rect x="380" y="22" width="52" height="18" rx="4"/>
+    <rect x="440" y="22" width="64" height="18" rx="4"/>
+    <rect x="512" y="22" width="60" height="18" rx="4"/>
+  </g>
+  <g transform="translate(24,86)">
+    <rect width="180" height="250" rx="10" fill="#ffffff" stroke="#d5deda"/>
+    <rect x="16" y="16" width="148" height="26" rx="5" fill="#e9f2f1"/>
+    <g fill="#0f6b6b" opacity="0.75">
+      <rect x="16" y="58" width="120" height="14" rx="3"/>
+      <rect x="16" y="82" width="96" height="14" rx="3"/>
+      <rect x="16" y="106" width="108" height="14" rx="3"/>
+    </g>
+  </g>
+  <g transform="translate(228,86)">
+    <rect width="180" height="112" rx="10" fill="#ffffff" stroke="#d5deda"/>
+    <rect x="16" y="16" width="90" height="14" rx="3" fill="#0f6b6b"/>
+    <g fill="#b2d6d0">
+      <rect x="16" y="40" width="148" height="12" rx="3"/>
+      <rect x="16" y="60" width="124" height="12" rx="3"/>
+    </g>
+  </g>
+  <g transform="translate(228,214)">
+    <rect width="180" height="122" rx="10" fill="#ffffff" stroke="#d5deda"/>
+    <rect x="16" y="16" width="110" height="14" rx="3" fill="#0f6b6b"/>
+    <g fill="#b2d6d0">
+      <rect x="16" y="40" width="148" height="12" rx="3"/>
+      <rect x="16" y="60" width="148" height="12" rx="3"/>
+      <rect x="16" y="80" width="90" height="12" rx="3"/>
+    </g>
+  </g>
+  <g transform="translate(432,86)">
+    <rect width="184" height="250" rx="10" fill="#ffffff" stroke="#d5deda"/>
+    <g>
+      <rect x="16" y="16" width="152" height="60" rx="6" fill="#e9f2f1"/>
+      <rect x="16" y="88" width="152" height="60" rx="6" fill="#e9f2f1"/>
+      <rect x="16" y="160" width="152" height="74" rx="6" fill="#e9f2f1"/>
+    </g>
+    <g font-family="system-ui, sans-serif" font-size="13" fill="#1d2a31">
+      <text x="26" y="42">Lemon Chicken Orzo</text>
+      <text x="26" y="114">Sunday Ragù</text>
+      <text x="26" y="186">Miso Butter Salmon</text>
+    </g>
+  </g>
+</svg>
