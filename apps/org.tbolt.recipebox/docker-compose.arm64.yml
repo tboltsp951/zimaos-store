@@ -3,7 +3,7 @@ name: recipe-box
 
 services:
   recipe-box:
-    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.0@sha256:a596659d982a98ca0f17adcf2ab1cb3ca0147919fcfb9aeec1c49119da22b821
+    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.0@sha256:3d62962092d26e9cb1fe21e405ec6f6e15d856e13086c6778c5f4bd92f92476e
     pull_policy: always
     network_mode: bridge
     ports:
