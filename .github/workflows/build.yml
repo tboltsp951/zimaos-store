@@ -58,4 +58,39 @@ jobs:
 
       - name: Refresh jsDelivr cache
         run: |
-          curl -fsSL "https://purge.jsdelivr.net/gh/${{ github.repository }}@gh-pages/index.json" || true
+          # jsDelivr caches a branch ref for up to a week. Purging only index.json
+          # left each app's meta.json stale, so an app could show a category that
+          # no longer exists and disappear from the store. Purge every published
+          # file, not just the index.
+          set -euo pipefail
+          repo="${{ github.repository }}"
+          # Give GitHub a moment to serve the new branch content, otherwise the
+          # purge can re-cache the previous version.
+          sleep 15
+          purge() {
+            curl -fsSL --retry 3 --retry-delay 2 --max-time 20 \
+              "https://purge.jsdelivr.net/gh/${repo}@gh-pages/$1" >/dev/null 2>&1 || true
+          }
+          count=0
+          while IFS= read -r f; do
+            rel="${f#dist/}"
+            [ "$rel" = ".nojekyll" ] && continue
+            purge "$rel"
+            count=$((count + 1))
+          done < <(find dist -type f | sort)
+          echo "Purged ${count} file(s) from jsDelivr."
+
+      - name: Verify the CDN serves the new index
+        run: |
+          set -euo pipefail
+          url="https://cdn.jsdelivr.net/gh/${{ github.repository }}@gh-pages/index.json"
+          for attempt in 1 2 3 4 5; do
+            body=$(curl -fsSL --max-time 20 "$url" || true)
+            if echo "$body" | grep -q '"app_count"'; then
+              echo "$body" | grep -o '"app_count":[0-9]*' || true
+              echo "CDN is serving the store index."
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "::warning::jsDelivr did not return the index yet; the store will catch up shortly."
