@@ -58,39 +58,65 @@ jobs:
 
       - name: Refresh jsDelivr cache
         run: |
-          # jsDelivr caches a branch ref for up to a week. Purging only index.json
-          # left each app's meta.json stale, so an app could show a category that
-          # no longer exists and disappear from the store. Purge every published
-          # file, not just the index.
+          # jsDelivr caches a branch ref for up to a week, so every published
+          # file must be purged - not just index.json. Purging only the index
+          # left each app's meta.json stale, so an app could advertise a
+          # category that no longer exists and vanish from the store.
+          #
+          # A purge also races the deploy: jsDelivr re-fetches from GitHub
+          # Pages, so purging before Pages serves the new build simply caches
+          # the previous one. Wait for Pages to catch up, purge, then compare
+          # the CDN against dist/ and purge again if it is still behind.
           set -euo pipefail
           repo="${{ github.repository }}"
-          # Give GitHub a moment to serve the new branch content, otherwise the
-          # purge can re-cache the previous version.
-          sleep 15
+          pages="https://${{ github.repository_owner }}.github.io/${GITHUB_REPOSITORY#*/}"
+          cdn="https://cdn.jsdelivr.net/gh/${repo}@gh-pages"
+
           purge() {
             curl -fsSL --retry 3 --retry-delay 2 --max-time 20 \
               "https://purge.jsdelivr.net/gh/${repo}@gh-pages/$1" >/dev/null 2>&1 || true
           }
-          count=0
-          while IFS= read -r f; do
-            rel="${f#dist/}"
-            [ "$rel" = ".nojekyll" ] && continue
-            purge "$rel"
-            count=$((count + 1))
-          done < <(find dist -type f | sort)
-          echo "Purged ${count} file(s) from jsDelivr."
+          purge_all() {
+            count=0
+            while IFS= read -r f; do
+              rel="${f#dist/}"
+              [ "$rel" = ".nojekyll" ] && continue
+              purge "$rel"
+              count=$((count + 1))
+            done < <(find dist -type f | sort)
+            echo "Purged ${count} file(s) from jsDelivr."
+          }
 
-      - name: Verify the CDN serves the new index
-        run: |
-          set -euo pipefail
-          url="https://cdn.jsdelivr.net/gh/${{ github.repository }}@gh-pages/index.json"
-          for attempt in 1 2 3 4 5; do
-            body=$(curl -fsSL --max-time 20 "$url" || true)
-            if echo "$body" | grep -q '"app_count"'; then
-              echo "$body" | grep -o '"app_count":[0-9]*' || true
-              echo "CDN is serving the store index."
-              exit 0
+          for i in $(seq 1 24); do
+            if curl -fsSL --max-time 20 "$pages/index.json" | cmp -s - dist/index.json; then
+              echo "GitHub Pages is serving the new index."
+              break
+            fi
+            if [ "$i" = "24" ]; then
+              echo "::warning::Pages still serving an older index; purging anyway."
             fi
             sleep 5
           done
-          echo "::warning::jsDelivr did not return the index yet; the store will catch up shortly."
+
+          purge_all
+
+          stale_check() {
+            curl -fsSL --max-time 20 "$cdn/index.json" 2>/dev/null | cmp -s - dist/index.json || return 1
+            for meta in dist/apps/*/meta.json; do
+              [ -e "$meta" ] || continue
+              rel="apps/$(basename "$(dirname "$meta")")/meta.json"
+              curl -fsSL --max-time 20 "$cdn/$rel" 2>/dev/null | cmp -s - "$meta" || return 1
+            done
+            return 0
+          }
+
+          for attempt in 1 2 3 4 5 6; do
+            if stale_check; then
+              echo "CDN matches the new build."
+              exit 0
+            fi
+            echo "CDN still serving an older file (attempt ${attempt}); purging again."
+            purge_all
+            sleep 10
+          done
+          echo "::warning::jsDelivr is still serving older files; it will catch up shortly."
