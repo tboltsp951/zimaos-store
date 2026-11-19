@@ -3,7 +3,7 @@ name: recipe-box
 
 services:
   recipe-box:
-    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.2
+    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.3
     pull_policy: always
     network_mode: bridge
     ports:
@@ -65,7 +65,7 @@ x-casaos:
     en_US: Recipe Box
   index: /
   port_map: "8197"
-  version: "1.0.2"
+  version: "1.0.3"
   update_at: "2026-11-19"
   release_notes:
     en_US: |-
@@ -74,7 +74,8 @@ x-casaos:
         CDN-fronted sites) load instead of failing with 503/402. The server
         route speaks HTTP/2, which those CDNs require.
       - If every route fails, the import message now says whether the server
-        route was tried, so the next step is clear.
+        route was tried; when the app is older than the server it says so and
+        asks you to update instead of blaming the site.
       - The API token now protects only /api/*, so setting RECIPEBOX_TOKEN no
         longer locks you out of the app itself.
   website: "https://github.com/tboltsp951/zimaos-recipe-box"
