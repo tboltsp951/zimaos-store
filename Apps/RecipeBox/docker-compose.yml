@@ -3,7 +3,7 @@ name: recipe-box
 
 services:
   recipe-box:
-    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.1
+    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.2
     pull_policy: always
     network_mode: bridge
     ports:
@@ -65,15 +65,18 @@ x-casaos:
     en_US: Recipe Box
   index: /
   port_map: "8197"
-  version: "1.0.1"
-  update_at: "2026-11-18"
+  version: "1.0.2"
+  update_at: "2026-11-19"
   release_notes:
     en_US: |-
-      - Camera capture now works over plain http on a LAN address. The browser
-        hides camera APIs outside https/localhost, so the app opens the device
-        camera app instead of refusing to continue; photos still go through the
-        same AI import. Live preview, torch, grid and timer still need https or
-        localhost.
+      - Website import now fetches through the Recipe Box server first, from your
+        own network, so sites that block public relays (Allrecipes and other
+        CDN-fronted sites) load instead of failing with 503/402. The server
+        route speaks HTTP/2, which those CDNs require.
+      - If every route fails, the import message now says whether the server
+        route was tried, so the next step is clear.
+      - The API token now protects only /api/*, so setting RECIPEBOX_TOKEN no
+        longer locks you out of the app itself.
   website: "https://github.com/tboltsp951/zimaos-recipe-box"
   repo: "https://github.com/tboltsp951/zimaos-recipe-box"
   support: "https://github.com/tboltsp951/zimaos-recipe-box/issues"
