@@ -3,7 +3,7 @@ name: recipe-box
 
 services:
   recipe-box:
-    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.6
+    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.7
     pull_policy: always
     network_mode: bridge
     ports:
@@ -65,19 +65,18 @@ x-casaos:
     en_US: Recipe Box
   index: /
   port_map: "8197"
-  version: "1.0.6"
+  version: "1.0.7"
   update_at: "2026-11-20"
   release_notes:
     en_US: |-
-      - Categories are now alphabetical, the old "Meat" category is renamed
-        to "Beef", and "Pork" has been added. Existing recipes, selections and
-        saved views filed under Meat are migrated automatically, so nothing is
-        orphaned; custom categories are kept.
-      - Includes 1.0.5: main-ingredient chips are multi-select (Eggs + Pork)
-        with an all/any Match toggle, and detection checks both titles and
-        ingredient lists.
-      - Includes 1.0.4 import fixes: server-first fetch with an automatic
-        translated mirror when a site blocks your box's own IP.
+      - Adding a category can now file existing recipes automatically. With
+        "AI-file recipes" ticked and an OpenRouter key configured, the AI reads
+        each recipe's title and ingredients and adds the new category where it
+        fits, in batches, with a count when it finishes. The new category is
+        always kept, even if a batch fails.
+      - Categories remain alphabetical; includes 1.0.6's Meat -> Beef rename,
+        new Pork category and automatic migration, plus 1.0.5's multi-select
+        main-ingredient chips.
   website: "https://github.com/tboltsp951/zimaos-recipe-box"
   repo: "https://github.com/tboltsp951/zimaos-recipe-box"
   support: "https://github.com/tboltsp951/zimaos-recipe-box/issues"
