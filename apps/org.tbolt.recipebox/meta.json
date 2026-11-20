@@ -21,16 +21,16 @@
   "repo": "https://github.com/tboltsp951/zimaos-recipe-box",
   "support": "https://github.com/tboltsp951/zimaos-recipe-box/issues",
   "title": "Recipe Box",
-  "release_note": "- Adding a category can now file existing recipes automatically. With\n  \"AI-file recipes\" ticked and an OpenRouter key configured, the AI reads\n  each recipe's title and ingredients and adds the new category where it\n  fits, in batches, with a count when it finishes. The new category is\n  always kept, even if a batch fails.\n- Categories remain alphabetical; includes 1.0.6's Meat -> Beef rename,\n  new Pork category and automatic migration, plus 1.0.5's multi-select\n  main-ingredient chips.",
+  "release_note": "- Scale recipes up to 6x with the new 4x/5x/6x presets. Custom factors\n  from Target servings or the planner stay visible in the menu instead of\n  blanking it.\n- A dedicated Favorites section lists every starred recipe at the top of\n  the library. Star or unstar from the recipe view with one click, or use\n  \"Show all favorites\" to filter the list (click again to see everything).\n- Includes 1.0.7's AI filing when adding a category, alphabetical\n  categories, the Meat -> Beef rename and new Pork category.",
   "base_url": "https://tboltsp951.github.io/zimaos-store",
   "id": "org.tbolt.recipebox",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 48499110,
-    "arm64": 49158652
+    "amd64": 48500556,
+    "arm64": 49160093
   }
 }
