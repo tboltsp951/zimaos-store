@@ -16,21 +16,21 @@
   "tips": {
     "before_install": "## Recipe Box\n\nData (recipes, shopping lists, sync history) is stored on your ZimaOS disk at `/DATA/AppData/$AppID/`, so it survives container rebuilds.\n\nOpen **Settings** in the app to add an OpenRouter API key if you want AI import from websites, photos, PDFs or pasted text. Without a key everything else still works: manual recipes, meal planning, shopping lists, and local backups.\n\nIf this instance is reachable from other devices, set `RECIPEBOX_TOKEN` in the app's Sync dialog so the server requires a bearer token.\n"
   },
-  "update_at": "2026-11-19",
+  "update_at": "2026-11-20",
   "website": "https://github.com/tboltsp951/zimaos-recipe-box",
   "repo": "https://github.com/tboltsp951/zimaos-recipe-box",
   "support": "https://github.com/tboltsp951/zimaos-recipe-box/issues",
   "title": "Recipe Box",
-  "release_note": "- Website import now fetches through the Recipe Box server first, from your\n  own network, so sites that block public relays (Allrecipes and other\n  CDN-fronted sites) load instead of failing with 503/402. The server\n  route speaks HTTP/2, which those CDNs require.\n- If a site blocks your box's own internet address (403/402), the server\n  now retries through a translated copy fetched from a different IP, so\n  Allrecipes loads even when the box is refused. The recipe data is kept\n  intact and the import report shows which route worked.\n- Import errors now include the server's own error text, so a blocked IP\n  is reported as \"upstream HTTP 403\" instead of a bare 502.\n- The API token protects only /api/*, so setting RECIPEBOX_TOKEN no\n  longer locks you out of the app itself.",
+  "release_note": "- The main-ingredient chips under search are now multi-select: pick Eggs\n  and Pork together to find recipes containing both. A \"Match: all/any\"\n  toggle switches between requiring every selected main and any one of\n  them, and \"Any main\" clears the selection.\n- Main detection now checks the title and the full ingredient list, so a\n  recipe named \"Egg Muffins\" with ham in the ingredients is found by\n  Eggs + Pork. Saved filter views keep the selection and match mode.\n- Includes the 1.0.4 import fixes: server-first fetch with an automatic\n  translated mirror when a site blocks your box's own IP, plus clearer\n  per-route error messages.",
   "base_url": "https://tboltsp951.github.io/zimaos-store",
   "id": "org.tbolt.recipebox",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 48496570,
-    "arm64": 49156112
+    "amd64": 48496862,
+    "arm64": 49156404
   }
 }
