@@ -21,16 +21,16 @@
   "repo": "https://github.com/tboltsp951/zimaos-recipe-box",
   "support": "https://github.com/tboltsp951/zimaos-recipe-box/issues",
   "title": "Recipe Box",
-  "release_note": "- The main-ingredient chips under search are now multi-select: pick Eggs\n  and Pork together to find recipes containing both. A \"Match: all/any\"\n  toggle switches between requiring every selected main and any one of\n  them, and \"Any main\" clears the selection.\n- Main detection now checks the title and the full ingredient list, so a\n  recipe named \"Egg Muffins\" with ham in the ingredients is found by\n  Eggs + Pork. Saved filter views keep the selection and match mode.\n- Includes the 1.0.4 import fixes: server-first fetch with an automatic\n  translated mirror when a site blocks your box's own IP, plus clearer\n  per-route error messages.",
+  "release_note": "- Categories are now alphabetical, the old \"Meat\" category is renamed\n  to \"Beef\", and \"Pork\" has been added. Existing recipes, selections and\n  saved views filed under Meat are migrated automatically, so nothing is\n  orphaned; custom categories are kept.\n- Includes 1.0.5: main-ingredient chips are multi-select (Eggs + Pork)\n  with an all/any Match toggle, and detection checks both titles and\n  ingredient lists.\n- Includes 1.0.4 import fixes: server-first fetch with an automatic\n  translated mirror when a site blocks your box's own IP.",
   "base_url": "https://tboltsp951.github.io/zimaos-store",
   "id": "org.tbolt.recipebox",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 48496862,
-    "arm64": 49156404
+    "amd64": 48497222,
+    "arm64": 49156768
   }
 }

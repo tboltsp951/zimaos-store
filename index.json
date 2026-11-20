@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-11-20T13:35:33Z",
+  "updated_at": "2026-11-20T14:01:40Z",
   "app_count": 9,
   "base_url": "https://tboltsp951.github.io/zimaos-store",
   "apps": [
@@ -148,8 +148,8 @@
       "thumbnail": "/apps/org.tbolt.recipebox/assets/thumbnail.svg",
       "compose_url": "/apps/org.tbolt.recipebox/docker-compose.yml",
       "meta_url": "/apps/org.tbolt.recipebox/meta.json",
-      "content_hash": "613ca929",
-      "version": "1.0.5"
+      "content_hash": "8e0874c5",
+      "version": "1.0.6"
     },
     {
       "id": "org.tbolt.reserve-ledger",
