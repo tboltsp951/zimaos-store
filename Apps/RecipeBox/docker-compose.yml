@@ -3,7 +3,7 @@ name: recipe-box
 
 services:
   recipe-box:
-    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.4
+    image: ghcr.io/tboltsp951/zimaos-recipe-box:1.0.5
     pull_policy: always
     network_mode: bridge
     ports:
@@ -65,22 +65,20 @@ x-casaos:
     en_US: Recipe Box
   index: /
   port_map: "8197"
-  version: "1.0.4"
-  update_at: "2026-11-19"
+  version: "1.0.5"
+  update_at: "2026-11-20"
   release_notes:
     en_US: |-
-      - Website import now fetches through the Recipe Box server first, from your
-        own network, so sites that block public relays (Allrecipes and other
-        CDN-fronted sites) load instead of failing with 503/402. The server
-        route speaks HTTP/2, which those CDNs require.
-      - If a site blocks your box's own internet address (403/402), the server
-        now retries through a translated copy fetched from a different IP, so
-        Allrecipes loads even when the box is refused. The recipe data is kept
-        intact and the import report shows which route worked.
-      - Import errors now include the server's own error text, so a blocked IP
-        is reported as "upstream HTTP 403" instead of a bare 502.
-      - The API token protects only /api/*, so setting RECIPEBOX_TOKEN no
-        longer locks you out of the app itself.
+      - The main-ingredient chips under search are now multi-select: pick Eggs
+        and Pork together to find recipes containing both. A "Match: all/any"
+        toggle switches between requiring every selected main and any one of
+        them, and "Any main" clears the selection.
+      - Main detection now checks the title and the full ingredient list, so a
+        recipe named "Egg Muffins" with ham in the ingredients is found by
+        Eggs + Pork. Saved filter views keep the selection and match mode.
+      - Includes the 1.0.4 import fixes: server-first fetch with an automatic
+        translated mirror when a site blocks your box's own IP, plus clearer
+        per-route error messages.
   website: "https://github.com/tboltsp951/zimaos-recipe-box"
   repo: "https://github.com/tboltsp951/zimaos-recipe-box"
   support: "https://github.com/tboltsp951/zimaos-recipe-box/issues"
